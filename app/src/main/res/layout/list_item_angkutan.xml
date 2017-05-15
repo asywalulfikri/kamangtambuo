@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:id="@+id/tv_perusahaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="16dp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_black"
+            android:text="KABUPATEN"/>
+
+        <TextView
+            android:id="@+id/tv_pemilik"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textColor="#808000"
+            android:text="Ibukota " />
+
+        <TextView
+            android:id="@+id/tv_jumlah_kendaraan"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textColor="#808000"
+            android:text="Ibukota " />
+
+        <TextView
+            android:id="@+id/tv_merek"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:textColor="#808000"
+            android:text="Ibukota " />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>

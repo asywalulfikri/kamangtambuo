@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "561980549743",
+    "firebase_url": "https://bismillahwisata-162717.firebaseio.com",
+    "project_id": "bismillahwisata-162717",
+    "storage_bucket": "bismillahwisata-162717.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561980549743:android:648708aa22dbdbef",
+        "android_client_info": {
+          "package_name": "sumbar.wisata.minang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561980549743-ra39qjb4rf5mt9d4ke6o4s7set9m8nik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sumbar.wisata.minang",
+            "certificate_hash": "b34ecd772a10f682d7d739c00013286c26d90b92"
+          }
+        },
+        {
+          "client_id": "561980549743-j3s258mdhiipkpa5rcggkkihcapg7u27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaT_UqT-V3cP8Hql_jqyp_f1CBdWmoLgg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561980549743-j3s258mdhiipkpa5rcggkkihcapg7u27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

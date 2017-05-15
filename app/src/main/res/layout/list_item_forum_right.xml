@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:layout_marginLeft="60dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/no_image" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/corner_chatt"
+        android:paddingLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingRight="20dp"
+        android:id="@+id/rl_forum_chat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello I am chandler"
+            android:textColor="@color/text_color_white"
+            android:textSize="14dp"
+            android:layout_below="@+id/tvSenderName"
+            android:id="@+id/tv_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:20PM"
+            android:textColor="@color/instagram"
+            android:textSize="10dp"
+            android:layout_below="@+id/tv_comment"
+            android:layout_alignLeft="@+id/tv_comment"
+            android:layout_alignStart="@+id/tv_comment"
+            android:id="@+id/tv_time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abinash Neupane"
+            android:visibility="gone"
+            android:id="@+id/tvSenderName"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

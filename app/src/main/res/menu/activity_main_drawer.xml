@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/first_section" android:checkableBehavior="all">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home" />
+
+        <item android:id="@+id/nav_Profile"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="@string/profile" />
+        <item android:id="@+id/nav_nearme"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="@string/nearme" />
+        <item android:id="@+id/nav_cerita"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/text_cerita" />
+        <item android:id="@+id/nav_resep"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="@string/text_resep" />
+        <item android:id="@+id/nav_Toko"
+            android:visible="false"
+            android:icon="@drawable/ic_local_grocery_store_black_24dp"
+            android:title="@string/store" />
+
+        <item android:id="@+id/nav_Transportasi"
+            android:icon="@drawable/ic_local_taxi_black_24dp"
+            android:visible ="false"
+            android:title="@string/angkutan" />
+
+        <item android:id="@+id/nav_cuaca"
+            android:icon="@drawable/ic_cloud_black_24dp"
+            android:title="@string/weather" />
+        <item android:id="@+id/nav_bahasa"
+            android:icon="@drawable/ic_language"
+            android:title="@string/languange" />
+        </group>
+    <group android:id="@+id/second" android:checkableBehavior="all">
+        <item android:id="@+id/nav_tentang"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="@string/about" />
+        </group>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/container_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_margin">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/font_small"
+            tools:text="澎湃新闻 06-06 17:24"/>
+        <!--        android:layout_below="@id/news_detail_title_tv"
+                android:layout_marginTop="10dp"-->
+        <TextView
+            android:id="@+id/tv_jambuka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/font_normal"
+            tools:text="cvx"/>
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jambuka"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/font_normal"
+            tools:text="是本尊还是是后世扮演她们的演员，真真是极美的。这些人里有你心中女神么？"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_content"
+            android:id="@+id/iv_maps"
+            android:layout_height="300dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"/>
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/iv_maps"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-4914903732265878/2138370543">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

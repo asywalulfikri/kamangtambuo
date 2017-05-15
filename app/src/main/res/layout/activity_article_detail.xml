@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_above="@+id/rl_bottom"
+    android:id="@+id/coordinator_layout"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="@dimen/title_margin"
+            app:expandedTitleMarginStart="@dimen/title_margin"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <!--app:expandedTitleGravity="bottom"-->
+
+            <RelativeLayout
+                android:id="@+id/rl_home_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pagerBrowseSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <asywalul.minang.wisatasumbar.widget.CirclePageIndicator
+                    android:id="@+id/indicatorHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/mask_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/mask_news_detail_photo"
+                android:fitsSystemWindows="true"
+                tools:visibility="visible"
+                />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/item_content_news_detail"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_marker"
+        app:layout_anchor="@id/app_bar"
+        app:backgroundTint="@color/text_color_red"
+        app:layout_anchorGravity="bottom|end"/>
+
+
+    <!--app:backgroundTint="?attr/fabColor"-->
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+    <View
+        android:id="@+id/dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/coordinator_layout"
+        android:background="@drawable/dropshadow" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_half_margin"
+            android:layout_marginRight="@dimen/activity_half_margin"
+
+            android:layout_toRightOf="@+id/iv_clip"
+            android:background="@color/text_color_white"
+            android:gravity="center_vertical"
+            android:hint="@string/text_tulis_comentar"
+            android:maxLines="5"
+            android:minLines="2"
+            android:paddingRight="30dp"
+            android:text=""
+            android:textColor="@color/text_color_black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

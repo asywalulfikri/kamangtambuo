@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="array_lang_key" tools:ignore="MissingTranslation">
+        <item>@string/text_id</item>
+        <item>@string/text_en</item>
+        <item>@string/text_zsm</item>
+    </string-array>
+    <string-array name="array_lang">
+        <item>@string/text_indonesia</item>
+        <item>@string/text_english</item>
+        <item>@string/text_minang</item>
+    </string-array>
+
+    <string-array name="array_kategori">
+        <item>@string/semua_kategori</item>
+        <item>@string/text_wisata</item>
+        <item>@string/text_budaya</item>
+        <item>@string/kuliner</item>
+    </string-array>
+
+    <string-array name="array_question">
+        <item>@string/text_delete</item>
+        <item>@string/text_share</item>
+        <item>@string/text_save</item>
+    </string-array>
+
+
+    <string-array name="array_satuan">
+        <item>@string/satuan_buah</item>
+        <item>@string/satuan_stell</item>
+        <item>@string/satuan_pasang</item>
+    </string-array>
+
+    <string-array name="array_filter">
+        <item>@string/text_terbaru</item>
+        <item>@string/text_terlama</item>
+    </string-array>
+
+
+  <!--  <string-array name="array_lokasi">
+        <item>Semua yang terdekat</item>
+        <item>bank</item>
+        <item>hospital</item>
+        <item>atm</item>
+        <item>cafe</item>
+        <item>mosque</item>
+        <item>museum</item>
+        <item>police</item>
+        <item>restaurant</item>
+        <item>school</item>
+        <item>store</item>
+        <item>airport</item>
+        <item>food</item>
+        <item>zoo</item>
+        <item>university</item>
+        <item>post_office</item>
+        <item>shopping_mall</item>
+        <item>taxi_stand</item>
+        <item>fire_station</item>
+        <item>parking</item>
+        <item>train_station</item>
+    </string-array>-->
+
+
+    <string-array name="array_nearme">
+        <item>@string/text_semua_terdekat</item>
+        <item>@string/bank</item>
+        <item>@string/rumah_sakit</item>
+        <item>@string/atm</item>
+        <item>@string/kafe</item>
+        <item>@string/mesjid</item>
+        <item>@string/museum</item>
+        <item>@string/kantor_polisi</item>
+        <item>@string/restorant</item>
+        <item>@string/sekolah</item>
+        <item>@string/pasar</item>
+        <item>@string/bandara</item>
+        <item>@string/toko_makanan</item>
+        <item>@string/kebun_binatang</item>
+        <item>@string/universitas</item>
+        <item>@string/kantor_pos</item>
+        <item>@string/mall</item>
+        <item>@string/taksi</item>
+        <item>@string/pemadam_kebakaran</item>
+        <item>@string/parkir</item>
+        <item>@string/stasiun</item>
+    </string-array>
+
+
+    <string-array name="array_kabupatendankota">
+        <item>@string/all_city</item>
+        <item>@string/kota_bukittinggi</item>
+        <item>@string/kota_padang</item>
+        <item>@string/kota_padang_panjang</item>
+        <item>@string/kota_pariaman</item>
+        <item>@string/kota_payakumbuh</item>
+        <item>@string/kota_sawahlunto</item>
+        <item>@string/kota_solok</item>
+        <item>@string/kab_agam</item>
+        <item>@string/kab_dharmasraya</item>
+        <item>@string/kab_kepulauan_mentawai</item>
+        <item>@string/kab_lima_puluh_kota</item>
+        <item>@string/kab_padang_pariaman</item>
+        <item>@string/kab_pasaman</item>
+        <item>@string/kab_pasaman_barat</item>
+        <item>@string/kab_pesisir_selatan</item>
+        <item>@string/kab_sijunjung</item>
+        <item>@string/kab_solok</item>
+        <item>@string/kab_solok_selatan</item>
+        <item>@string/kab_tanah_datar</item>
+    </string-array>
+
+
+</resources>

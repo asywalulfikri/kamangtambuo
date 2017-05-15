@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/llkategori"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/kota_dan_kabupaten"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/search_auto_complete"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/text_search"
+        android:dropDownAnchor="@+id/header"
+        android:layout_height="wrap_content" />
+
+    <asywalul.minang.wisatasumbar.widget.ExpandableHeightListView
+        android:id="@+id/simpleListView"
+        android:padding="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false" />
+</LinearLayout>

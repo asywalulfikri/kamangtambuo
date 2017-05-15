@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00AFF0</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color_orange2">#607D8B</color>
+    <color name="transparent_dark">#cc000000</color>
+    <color name="transparent_black">#cc000000</color>
+    <color name="bg_top">#84b262</color>
+    <color name="transparent_gray">#80000000</color>
+    <color name="bg_activity">#FFFFFF</color>
+    <color name="bg_splasscreen">#12bf99</color>
+    <color name="bg_title">#595959</color>
+    <color name="butt_color">#ffffff</color>
+    <color name="bg_list_header">#848484</color>
+    <color name="bg_dashboard">#c8c8cb</color>
+    <color name="bg_tab_menu">#f2f2f2</color>
+    <color name="bg_browse_normal">#fc9856</color>
+    <color name="bg_browse_selected">#c4462a</color>
+    <color name="bg_orange_profil">#FFFF99</color>
+    <color name="text_color_black">#323232</color>
+    <color name="black_pekat">#000000</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_color_grey">#999999</color>
+    <color name="text_color_grey2">#b3b3b3</color>
+    <color name="text_color_dark">#555555</color>
+    <color name="text_color_filter">#b3b3b3</color>
+    <color name="text_color_orange">#fb6c05</color>
+    <color name="text_color_orange3">#FC6C05</color>
+    <color name="text_color_red">#e84179</color>
+    <color name="text_color_tab">#b3b2b2</color>
+    <color name="text_color_green">#006766</color>
+    <color name="text_color_light_green">#8f9e27</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color_blue_alpha75">#7560caf1</color>
+    <color name="text_color_blue_alpha90">#9060caf1</color>
+    <color name="text_color_grey_alpha75">#75bebaba</color>
+    <color name="text_color_grey_alpha90">#90bebaba</color>
+    <color name="list_selector_selected">#0f62b0</color>
+    <color name="list_selector_pressed">#0f62b0</color>
+    <color name="list_divider">#bcbbbb</color>
+    <color name="red_actionbar_normal">#f02a21</color>
+    <color name="red_actionbar_pressed">#FA7373</color>
+   <!--// <color name="instagram">#125688</color>-->
+    <color name="instagram">#125688</color>
+    <color name="line_gray">#AAAAAA</color>
+
+    <!-- This Home -->
+    <color name="header_merah">#f02a21</color>
+    <color name="all_dropdown">#9fa2a4</color>
+    <color name="border_app">#edf0f1</color>
+    <color name="text_title_list_home">#bc1524</color>
+    <color name="text_deskripsi_content">#767171</color>
+    <color name="border_separator">#e4e4e4</color>
+    <color name="nav_header">#fd5260</color>
+    <color name="bg_questioner">#f2f2f2</color>
+    <color name="text_questioner_title">#616161</color>
+    <color name="text_questioner_answer">#767171</color>
+
+    <!-- This Article -->
+    <color name="text_article_category_title">#4e4e4d</color>
+    <color name="text_article_headtitle">#bc1524</color>
+
+    <!-- This View Detail -->
+    <color name="text_detail_category_title">#4e4e4d</color>
+    <color name="text_detail_headtitle">#bc1524</color>
+    <color name="text_detail_content_deskripsi">#767171</color>
+    <color name="bg_detail_response">#f1f5f7</color>
+    <color name="text_detail_response_name">#000000</color>
+    <color name="text_detail_time">#b6b6b6</color>
+    <color name="text_detail_title_response">#616161</color>
+
+    <!-- This Profile -->
+    <color name="bg_profile_setting">#4cd9c8</color>
+    <color name="bg_profile_popup_headline">#f02a21</color>
+    <color name="bg_profile_header">#005b7f</color>
+    <color name="text_profile">#97a538</color>
+    <color name="text_profile_name">#ecea67</color>
+    <color name="text_profile_popup">#9fa2a4</color>
+    <color name="text_profile_location">#f2805b</color>
+    <color name="bg_profile_changeprofile">#4cd9c8</color>
+    <color name="bg_login">#f6f7f1</color>
+
+    <!-- This Activity Log -->
+    <color name="text_log_content">#8d7d63</color>
+
+    <!-- Try Primary Concept -->
+    <color name="text_headtitle">#333333</color>
+    <color name="text_headtitle_register">#fff100</color>
+    <color name="text_subheadtitle">#4e4e4d</color>
+    <color name="text_content">#989fa9</color>
+    <color name="text_time">#bdbdbd </color>
+    <color name="border">#dde0e1</color>
+
+    <!-- This for header action bar -->
+    <color name="bg_header_actionbar">#ffffff</color>
+    <color name="bg_header_tab_actionbar">#007fa4</color>
+    <color name="bg_tab_selected_actionbar">#e2f2e5</color>
+    <color name="bg_tab_selected_cartstore">#728631</color>
+    <color name="bg_login_peka">#4cd9c8</color>
+
+    <!-- This for navigation drawer -->
+    <color name="bg_drawer">#f2f4e9</color>
+    <color name="bg_drawer_header">#005b7f</color>
+    <color name="bg_drawer_list_activated">#dedfd4</color>
+    <color name="text_drawer_menu">#97a538</color>
+    <color name="text_drawer_menu_new">#756f7b</color>
+    <color name="text_drawer_profile">#fff8b0</color>
+
+    <!-- This for activity detail -->
+    <color name="bg_compose_response">#12bf99</color>
+    <color name="bg_post_dialog">#ffeeeeee</color>
+    <color name="bg_komentar">#fdfae9</color>
+    <color name="bg_border">#e2ddc7</color>
+    <color name="bg_attachment">#2ebced</color>
+    <color name="bg_tips">#4cd9c8</color>
+
+    <!-- This color for button -->
+    <color name="btn_daftar_bg_normal">#3f77b4</color>
+    <color name="btn_daftar_bg_pressed">#d8f4f9</color>
+    <color name="btn_daftar_border">#4fc0e8</color>
+
+    <!-- This color for weather -->
+    <color name="weather_background">#f8f8f8</color>
+    <color name="weather_text">#125688</color>
+    <color name="weather_spinner">#857618</color>
+    <color name="text_on_fragment_information">#574b3d</color>
+    <color name="text_color_yellow">#FFFF00</color>
+
+    <!-- This color for product detail -->
+    <color name="bg_comment">#e1e8ea</color>
+
+    <color name="bgshowcase">#dd006766</color>
+
+
+    <color name="ball1">#FFD91C</color>
+    <color name="ball2">#FF4B4A</color>
+    <color name="ball3">#3D8EFF</color>
+    <color name="ball4">#1caa7a</color>
+
+    <integer-array name="colors">
+        <item>@color/ball1</item>
+        <item>@color/ball2</item>
+        <item>@color/ball3</item>
+        <item>@color/ball4</item>
+    </integer-array>
+
+    <color name="gray_deep">#c9000000</color>
+
+
+    <color name="alpha_05_white">#0DFFFFFF</color>
+    <color name="alpha_10_white">#1AFFFFFF</color>
+    <color name="alpha_15_white">#26FFFFFF</color>
+    <color name="alpha_20_white">#33FFFFFF</color>
+    <color name="alpha_25_white">#40FFFFFF</color>
+    <color name="alpha_30_white">#4DFFFFFF</color>
+    <color name="alpha_35_white">#59FFFFFF</color>
+    <color name="alpha_40_white">#66FFFFFF</color>
+    <color name="alpha_45_white">#73FFFFFF</color>
+    <color name="alpha_50_white">#80FFFFFF</color>
+    <color name="alpha_55_white">#8CFFFFFF</color>
+    <color name="alpha_60_white">#99FFFFFF</color>
+    <color name="alpha_65_white">#A6FFFFFF</color>
+    <color name="alpha_70_white">#B3FFFFFF</color>
+    <color name="alpha_75_white">#BFFFFFFF</color>
+    <color name="alpha_80_white">#CCFFFFFF</color>
+    <color name="alpha_85_white">#D9FFFFFF</color>
+    <color name="alpha_90_white">#E6FFFFFF</color>
+    <color name="alpha_95_white">#F2FFFFFF</color>
+
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_10_black">#1A000000</color>
+    <color name="alpha_15_black">#26000000</color>
+    <color name="alpha_20_black">#33000000</color>
+    <color name="alpha_25_black">#40000000</color>
+    <color name="alpha_30_black">#4D000000</color>
+    <color name="alpha_35_black">#59000000</color>
+    <color name="alpha_40_black">#66000000</color>
+    <color name="alpha_45_black">#73000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_55_black">#8C000000</color>
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_65_black">#A6000000</color>
+    <color name="alpha_70_black">#B3000000</color>
+    <color name="alpha_75_black">#BF000000</color>
+    <color name="alpha_80_black">#CC000000</color>
+    <color name="alpha_85_black">#D9000000</color>
+    <color name="alpha_90_black">#E6000000</color>
+    <color name="alpha_95_black">#F2000000</color>
+
+    <color name="container_background">#EBEBEB</color>
+
+    <color name="colorFacebook">#3b5998</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTwitter">#33ccff</color>
+    <color name="colorRegister">#FF3D00</color>
+    <color name="colorLogin">#2196F3</color>
+    <color name="colorBlack">#000</color>
+    <color name="bg_icon">#bdbdbd</color>
+
+
+
+
+
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray">#666666</color>
+    <color name="dialog_title">#ffff0000</color>
+    <color name="common_background">#f5f3f0</color>
+    <color name="txt_color_gray_3">#cbc4c6</color>
+    <color name="pink">#ff5d65</color>
+    <color name="brown">#cccccc</color>
+    <color name="pale_pink">#cbc4c6</color>
+    <color name="divider">#e8e3e3</color>
+    <color name="tabcolor">#6e686a</color>
+    <!-- [begin]crop -->
+
+    <color name="crop_bg">#D5D5D5</color>
+
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <!-- [end]crop -->
+
+    <!--Theme-->
+    <color name="red">#FF6347</color>
+    <color name="dark_red">#F4511E</color>
+    <color name="accent_red">#FF5722</color>
+    <!--Theme-->
+
+    <color name="blue">#2196F3</color>
+    <color name="dark_blue">#1976D2</color>
+    <color name="accent_blue">#448AFF</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="light_grey">#ffbebebe</color>
+    <color name="hijau_goj">#8dc63f</color>
+    <color name="instagram_2">#01579B</color>
+
+
+
+
+
+
+
+
+
+    <color name="dark">#1a1a1a</color>
+    <color name="gray_dark">#555555</color>
+    <color name="gray_light">#dcdcdc</color>
+    <color name="background">#ededed</color>
+    <color name="light">#ffffff</color>
+    <color name="light_transparent">#bbffffff</color>
+    <color name="gradient_primary_from">#0cc4db</color>
+    <color name="gradient_primary_to">#0cd2eb</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white_overlay">#33ffffff</color>
+
+    <color name="color_info">#5cc1df</color>
+    <color name="color_info_transparent">#dd5cc1df</color>
+    <color name="color_info_light">#66ccea</color>
+    <color name="color_info_medium">#51b4d1</color>
+    <color name="color_info_hard">#44aac7</color>
+    <color name="color_info_darker">#3b99b4</color>
+    <color name="color_success">#5cb85c</color>
+    <color name="color_success_transparent">#dd5cb85c</color>
+    <color name="color_success_light">#68c968</color>
+    <color name="color_success_medium">#52ae52</color>
+    <color name="color_success_hard">#4da34d</color>
+    <color name="color_success_darker">#449144</color>
+    <color name="color_warning">#f1ae50</color>
+    <color name="color_warning_transparent">#ddf1ae50</color>
+    <color name="color_warning_light">#f5b457</color>
+    <color name="color_warning_medium">#e4a346</color>
+    <color name="color_warning_hard">#d79638</color>
+    <color name="color_warning_darker">#ce8d2f</color>
+    <color name="color_caution">#f47738</color>
+    <color name="color_caution_transparent">#ddf47738</color>
+    <color name="color_caution_light">#ff7f3f</color>
+    <color name="color_caution_medium">#fd7734</color>
+    <color name="color_caution_hard">#f56d29</color>
+    <color name="color_caution_darker">#e4601f</color>
+    <color name="color_danger">#d9534f</color>
+    <color name="color_danger_transparent">#ddd9534f</color>
+    <color name="color_danger_light">#e9635f</color>
+    <color name="color_danger_medium">#c94b47</color>
+    <color name="color_danger_hard">#be403c</color>
+    <color name="color_danger_darker">#b33b38</color>
+    <color name="color_hazard">#d12079</color>
+    <color name="color_hazard_transparent">#ddd12079</color>
+    <color name="color_hazard_light">#e72d8a</color>
+    <color name="color_hazard_medium">#c41a6c</color>
+    <color name="color_hazard_hard">#b71262</color>
+    <color name="color_hazard_darker">#a60f58</color>
+
+    <color name="color_title_image_slider">#FFFFFF</color>
+    <color name="color_desc_image_slider">#EEEEEE</color>
+    <color name="bg_dialog_credit">#5ABC6E</color>
+    <color name="tutorial_buttonTextColor">#ffffff</color>
+    <color name="tutorial_subtitleTextColor">#ffffff</color>
+    <color name="tutorial_titleTextColor">#ffffff</color>
+
+
+
+    <color name="slide_1">#4f91ff</color>
+    <color name="slide_2">#fb9c25</color>
+    <color name="slide_3">#5ab55d</color>
+    <color name="slide_4">#ea2d6d</color>
+
+
+</resources>

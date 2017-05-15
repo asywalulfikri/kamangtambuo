@@ -1,0 +1,61 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/ToolbarTheme"
+    app:contentInsetLeft="0dp"
+    app:navigationIcon="@drawable/ic_arrow_left"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin"
+    app:popupTheme="@style/ToolbarTheme">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_half_margin"
+        android:paddingBottom="@dimen/activity_half_margin"
+        android:paddingTop="@dimen/activity_half_margin">
+
+        <asywalul.minang.wisatasumbar.widget.Rounded
+            android:id="@+id/iv_author"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/no_image" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_author"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="@dimen/activity_half_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_author"
+                style="@style/TextCommon.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Admin 8Villagaes"
+                android:textColor="@color/text_color_black" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/TextCommon.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="50 menit"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

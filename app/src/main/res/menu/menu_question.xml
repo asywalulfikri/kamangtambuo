@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cycle="http://schemas.android.com/tools">
+
+
+
+    <group
+        android:id="@+id/group_question"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_all_content"
+            android:checked="true"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Semua Content"/>
+        <item
+            android:id="@+id/menu_question_content"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Semua Pertanyaan"/>
+        <item
+            android:id="@+id/menu_questions_response"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Pertanyaan Terjawab"/>
+        <item
+            android:id="@+id/menu_questions_notresponse"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Pertanyaan Belum Terjawab"/>
+        <item
+            android:id="@+id/menu_participation"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Pertanyaanku"/>
+        <item
+            android:id="@+id/menu_readlater"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Baca nanti"/>
+    </group>
+
+</menu>

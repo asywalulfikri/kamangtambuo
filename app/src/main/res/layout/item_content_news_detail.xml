@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bubble_white"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_margin">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="澎湃新闻 06-06 17:24"/>
+
+        <WebView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="6dp"
+            tools:text="人里有你心中女神么？"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"/>
+
+        <Button
+            android:id="@+id/btn_sumber"
+            style="@style/TextCommon.Small"
+            android:layout_width="match_parent"
+            android:text="LIHAT SUMBER"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/btn_sumber"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/iklan_detail_activity">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

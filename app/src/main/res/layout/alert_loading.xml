@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <asywalul.minang.wisatasumbar.util.loadingballs.BallView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        lib:balls="7"
+        lib:movement_cycle_time="2000"
+        lib:enable_size_animation="true"
+        lib:ball_colors="@array/colors"
+        lib:min_ball_size="5dp"
+        lib:max_ball_size="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

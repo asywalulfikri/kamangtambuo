@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_white"
+            android:padding="@dimen/activity_half_margin">
+
+            <View
+                android:id="@+id/dropdown"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/ll_weather_today"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/rl_weather_tomorow"
+                android:background="@color/weather_text" />
+
+            <LinearLayout
+                android:id="@+id/ll_weather_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/dropdown"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_kota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Bandung"
+                    android:textColor="@color/weather_text"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Hari Ini"
+                    android:textColor="@color/weather_text"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_half_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_weather_today"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_suhuToday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="21 - 31 °C"
+                            android:textColor="@color/weather_text"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_deskToday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Berawan"
+                            android:textColor="@color/weather_text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_kelembabanToday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Kelembaban 50 - 88 %"
+                            android:textColor="@color/weather_text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_kecAnginToday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Kec. Angin 35 (km/jam)"
+                            android:textColor="@color/weather_text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_arahAnginToday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Arah Angin Tenggara"
+                            android:textColor="@color/weather_text"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_weather_today"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/cuaca_berawan" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_weather_tomorow"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_weather_tomorrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Esok Hari"
+                        android:textColor="@color/weather_text"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_weather_tomorrow"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:src="@drawable/cuaca_berawan" />
+
+                    <TextView
+                        android:id="@+id/tv_suhuBesok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1 - 31 °C"
+                        android:textColor="@color/weather_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_deskBesok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cerah Berawan"
+                        android:textColor="@color/weather_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_kelembabanBesok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="50 - 88 %"
+                        android:textColor="@color/weather_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_kecAnginBesok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="35 (km/jam)"
+                        android:textColor="@color/weather_text"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_arahAnginBesok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tenggara"
+                        android:textColor="@color/weather_text"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

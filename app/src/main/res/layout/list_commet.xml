@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="match_parent">
+    <asywalul.minang.wisatasumbar.widget.ExpandableHeightListView
+        android:id="@+id/lv_data"
+        android:layout_width="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:clipToPadding="false"
+        android:background="@null"
+        android:scrollbars="none" />
+</ScrollView>

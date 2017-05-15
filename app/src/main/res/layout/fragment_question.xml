@@ -1,0 +1,115 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+       <ProgressBar
+                android:id="@+id/pb_refresh"
+                style="@style/Widget.PullToRefresh.ProgressBar.Horizontal.Center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" />
+
+            <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ptr_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <asywalul.minang.wisatasumbar.widget.ExpandableHeightListView
+                    android:id="@+id/lv_data"
+                    style="@style/ListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    android:clipToPadding="false"
+                    android:scrollbars="none"
+                    android:listSelector="@color/text_color_orange"
+                    android:divider="@null"
+                    android:visibility="gone"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            <asywalul.minang.wisatasumbar.widget.LoadingLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_error_volley_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_coba_lagi"
+            android:background="@drawable/corner_comment"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color_white"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:text="Coba Lagi"/>
+
+    </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+                <asywalul.minang.wisatasumbar.widget.FloatingActionsMenu
+                    android:id="@+id/multiple_actions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    app:fab_addButtonColorNormal="@color/colorLogin"
+                    app:fab_addButtonColorPressed="@color/text_color_black"
+                    app:fab_addButtonPlusIconColor="@color/text_color_white"
+                    app:fab_labelStyle="@style/menu_labels_style"
+                    app:fab_labelsPosition="left">
+
+
+
+                    <asywalul.minang.wisatasumbar.widget.FloatingActionButton1
+                        android:id="@+id/action_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="@color/colorLogin"
+                        app:fab_colorPressed="@color/text_color_black"
+                        app:fab_title="Share Info" />
+
+                    <asywalul.minang.wisatasumbar.widget.FloatingActionButton1
+                        android:id="@+id/action_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_colorNormal="@color/colorLogin"
+                        app:fab_colorPressed="@color/text_color_black"
+                        app:fab_title="@string/tanya_wisat" />
+
+                </asywalul.minang.wisatasumbar.widget.FloatingActionsMenu>
+            </FrameLayout>
+        </android.support.design.widget.CoordinatorLayout>

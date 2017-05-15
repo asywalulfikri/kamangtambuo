@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="7dp"
+    android:layout_marginRight="30dp"
+    android:paddingBottom="3dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_avatar"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl_forum_chat"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:background="@drawable/corner_chat"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hefv"
+            android:textColor="@color/text_color_white"
+            android:textSize="14dp"
+            android:layout_below="@+id/tvSenderName"
+            android:id="@+id/tv_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5:20PM"
+            android:textColor="#FFEB3B"
+            android:textSize="10dp"
+            android:layout_below="@+id/tv_comment"
+            android:id="@+id/tv_time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abinash Neupane"
+            android:visibility="visible"
+            android:textColor="#FFEB3B"
+            android:id="@+id/tvSenderName" />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

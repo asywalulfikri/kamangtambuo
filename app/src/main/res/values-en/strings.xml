@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_version">1.0.0.0</string>
+    <string name="app_name">Sumbar Rancak</string>
+    <!--ini for navigasi-->
+    <string name="tanya_wisata">Tour Ask</string>
+    <string name="article">Article</string>
+    <string name="kuliner">Food</string>
+    <string name="store">Store</string>
+    <string name="booking_travel">Travel Booking</string>
+    <string name="event">Event</string>
+    <string name="transportation">Transportation</string>
+    <string name="daerah">Terrytory</string>
+    <string name="profile">PROFILE</string>
+    <string name="weather">WEATHER</string>
+    <string name="about">ABOUT</string>
+    <string name="home">HOME</string>
+    <string name="save">SAVE</string>
+    <string name="languange">LANGUANGE</string>
+    <string name="text_register_failed">Registrasion Failed </string>
+    <!--habis-->
+
+    <string name="like">like</string>
+    <string name="komentar">comment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="text_take" >Take Use</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_question_warning" >Question not write</string>
+    <string name="posttopik">Topic</string>
+    <string name="text_camera">Camera</string>
+    <string name="text_gallery" >Gallery</string>
+    <string name="tvdata_list_item_adapter" >data</string>
+    <string name="text_sending" >Send</string>
+    <string name="text_loading">Loading</string>
+    <string name="text_post_question_success" >Question Susscses</string>
+    <string name="no_connection_for_post">No Connection, Question will be Save</string>
+    <string name="text_post_question_failed" >Question send Failed</string>
+    <string name="message_dialog_info">Message Here</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="ubah_password">Change Password</string>
+    <string name="text_indonesia">Indonesia</string>
+    <string name="text_minang">Minang</string>
+    <string name="text_english">English</string>
+    <string name="text_emailpassword_null">Email and Password Empty</string>
+    <string name="title_dialog_changelanguage">Change Languange</string>
+    <string name="dialog_login">Log in...</string>
+    <string name="text_welcome" >Welcome</string>
+    <string name="text_login_failed">Login gagal</string>
+    <string name="text_pertanyaan_ditambah">Question Already post</string>
+
+    <string name="text_wisata">Tour</string>
+    <string name="text_kuliner">Food</string>
+    <string name="text_budaya">Culture</string>
+    <string name="text_lokasi">Location</string>
+    <string name="text_category">Category</string>
+    <string name="tulis_pertanyaan">Write Question Here</string>
+    <string name="tanya_wisat">Post Question</string>
+    <string name="nearme">LOCATION NEAR ME</string>
+    <string name="exit">Press back once more to exit</string>
+    <string name="text_download_failed">Check Your Connection</string>
+    <string name="shared_element_image_cover">transitionImage</string>
+    <string name="text_like"> Like</string>
+    <string name="text_about_seller">Seller</string>
+    <string name="text_call_seller">Call seller</string>
+    <string name="text_pesan">Send messege</string>
+    <string name="text_like_already">Already like</string>
+    <string name="text_next">Next</string>
+    <string name="text_no_data">Data empty</string>
+    <string name="text_logout">Are you sure wanna logout?</string>
+    <string name="text_need_account">NEED AN ACCOUNT?</string>
+    <string name="text_no_weather_fragment" >Weather information has not been update, please try again</string>
+    <string name="text_cerita">MINANG STORY</string>
+
+
+    <string name="text_complete_from">Please complete the form</string>
+    <string name="login_forgotpassword">Forgot password</string>
+    <string name="text_resep">MINANG RECIPES</string>
+    <string name="text_bahasa">Language</string>
+    <string name="text_logout_app">Logout</string>
+    <string name="text_login">Login</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_share">Share</string>
+    <string name="text_save">Save</string>
+
+    <!--Bahasa-->
+    <string name="text_id">id</string>
+    <string name="text_en">en</string>
+    <string name="text_zsm">zsm</string>
+
+    <!--Kota Kabupaten-->
+    <string name="all_city">Semua Kota dan Kabupaten</string>
+    <string name="kota_bukittinggi">Kota Bukittinggi</string>
+    <string name="kota_padang">Kota Padang</string>
+    <string name="kota_padang_panjang">Kota Padang Panjang</string>
+    <string name="kota_pariaman">Kota Pariaman</string>
+    <string name="kota_payakumbuh">Kota Payakumbuh</string>
+    <string name="kota_sawahlunto">Kota Sawahlunto</string>
+    <string name="kota_solok">Kota Solok</string>
+    <string name="kab_agam">Kabupaten Agam</string>
+    <string name="kab_dharmasraya">Kabupaten Dharmasraya</string>
+    <string name="kab_kepulauan_mentawai">Kabupaten Kapulauan Mentawai</string>
+    <string name="kab_lima_puluh_kota">Kabupaten Lima Puluh Kota</string>
+    <string name="kab_padang_pariaman">Kabupaten Padang Pariaman</string>
+    <string name="kab_pasaman">Kabupaten Pasaman</string>
+    <string name="kab_pasaman_barat">Kabupaten Pasaman Barat</string>
+    <string name="kab_pesisir_selatan">Kabupaten Pesisir Selatan</string>
+    <string name="kab_sijunjung">Kabupaten Sijunjung</string>
+    <string name="kab_solok">Kabupaten Solok</string>
+    <string name="kab_solok_selatan">Kabupaten Solok Selatan</string>
+    <string name="kab_tanah_datar">Kabupaten Tanah Datar</string>
+
+
+    <string name="semua_kategori">Semua Kategori</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+    <string name="kafe">Kafe</string>
+    <string name="restorant">Restorant</string>
+    <string name="bank">Bank</string>
+    <string name="atm">ATM</string>
+    <string name="museum">Museum</string>
+    <string name="kantor_polisi">Kantor Polisi</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="pasar">Pasar</string>
+    <string name="bandara">Bandara</string>
+    <string name="toko_makanan">Toko Makanan</string>
+    <string name="kebun_binatang">Kebun Binatang</string>
+    <string name="universitas">Universitas</string>
+    <string name="kantor_pos">Kantor Pos</string>
+    <string name="pemadam_kebakaran">Pemadam Kebakaran</string>
+    <string name="parkir">Parkir</string>
+    <string name="stasiun">Stasiun</string>
+    <string name="taksi">Taksi</string>
+    <string name="mesjid">Mesjid</string>
+    <string name="mall">Mall</string>
+
+    <string name="text_terbaru">Terbaru</string>
+    <string name="text_terlama">Terlama</string>
+
+    <string name="article_wisata">Tour</string>
+    <string name="article_kuliner">Food</string>
+    <string name="article_budaya">Culture</string>
+    <string name="story">SHARE STORY</string>
+    <string name="angkutan">Tourism Transport</string>
+    <string name="text_look_offer">Lihat Tawaran</string>
+
+    <string name="size12">12 SP</string>
+    <string name="size14">14 SP</string>
+    <string name="size16">16 SP</string>
+    <string name="size18">18 SP</string>
+
+    <string name="text_login_first">For Read,\Please Login First</string>
+    <string name="text_no">No</string>
+    <string name="text_yes">Yes</string>
+
+    <string name="text_kelembaban">Dampness</string>
+    <string name="text_kec_angin">Wind Speed</string>
+    <string name="text_arah_angin">Wind Direction</string>
+
+    <string name="text_semua_terdekat">Semua Yang Terdekat</string>
+
+    <string name="text_back">Back</string>
+    <string name="text_about">Aplikasi Wisata Minang Sumbar ini merupakan aplikasi wisata Sumatera Barat, Aplikasi ini dibuat untuk memudahkan Para wisatawan yang berkunjung ke Sumatera Barat Dalam mencari tempat wisata,  Dalam Aplikasi ini kita juga bisa bertanya dan menjawab pertanyaan, Banyak Fitur2 yang terdapat dalam aplikasi ini cuaca, artikel, tanya jawab, lokasi wisata dll, Aplikasi ini masih dalam tahap Di kembangkan dan masih banyak terdapat bug sana sini, Untuk itu mohon maaf bila ada kekurangan dalam Aplikasi ini,karena ini masih dalam tahap Uji Coba</string>
+
+    <string name="satuan_buah">Buah</string>
+    <string name="satuan_stell">Stell</string>
+    <string name="satuan_pasang">Pasang</string>
+
+    <string name="text_message_here">Enter message here</string>
+    <string name="text_no_chat">No chat</string>
+    <string name="err_msg_name">Enter full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+
+    <string name="text_gagal_like">Like Failed</string>
+
+    <!--This for handle error-->
+    <string name="error_timeout">Oops! Your Connection have a trouble.</string>
+    <string name="error_auth_failure">Oops! Terjadi Kesalahan.</string>
+    <string name="error_network">Oops! Kesalahan di jaringan.</string>
+    <string name="error_parser">Oops! Data diterima tidak terbaca.</string>
+    <string name="error_server_die">Oops! Maaf kami sedang maintenance.</string>
+    <string name="text_tryAgain">Coba Lagi</string>
+    <string name="error_try_again">Maaf telah terjadi kesalahan.</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-4914903732265878/7685376540</string>
+    <string name="interstitial_full_screen">ca-app-pub-4914903732265878/4371983347</string>
+    <string name="text_post_question_here">Create your questions</string>
+    <string name="text_tags_not_choise">Pertanyaan Anda Belum di Tulis </string>
+    <string name="text_edit_profile_succes">Profil telah berubah</string>
+    <string name="text_edit_profile_failed">Profil gagal di ubah</string>
+    <string name="text_or">ATAU</string>
+    <string name="text_login_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions.</string>
+    <string name="text_later">LATER</string>
+    <string name="text_login_before">PLEASE LOGIN FOR LIKE THIS CONTENT</string>
+    <string name="text_login_before_video">PLEASE LOGIN FOR PLAY VIDEO</string>
+
+    <string name="text_comment">Responses</string>
+    <string name="text_confirm_delete_comment">Your Responses will deleted ?</string>
+    <string name="text_fullname">Full Name</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_birthdate">Birtdate</string>
+    <string name="text_male">Male</string>
+    <string name="text_female">Female</string>
+    <string name="title_dialog_gender">Choose Gander</string>
+
+    <string name="text_semua_lokasi">SEMUA LOKASI</string>
+    <string name="text_search">Search City</string>
+    <string name="kota_dan_kabupaten">PILIH KOTA/KABUPATEN</string>
+    <string name="text_commentar_blank">Komentar Anda Masih Kosong</string>
+    <string name="text_loading_response">Memuat Komentar</string>
+    <color name="text_like">#bdbdbd</color>
+    <string name="text_register_succses">Register Success </string>
+
+    <string name="change_font_size">Change Font Size</string>
+    <string name="save_to_bookmark">Save to Bookmark</string>
+    <string name="text_bookmark_empty">Bookmark Still Empty</string>
+    <string name="text_update_avatar">Change Avatar</string>
+    <string name="text_updated_avatar_failed">Failed Change Avatar</string>
+
+    <string name="text_artikel_lama">Artikel Lama</string>
+    <string name="text_artikel_baru">Artikel Baru</string>
+    <string name="text_urutkan">Urutkan Artikel</string>
+
+    <string name="str_atv_places">Enter Place Here</string>
+    <string name="API_KEY_MAPS">AIzaSyDnwLF2-WfK8cVZt9OoDYJ9Y8kspXhEHfI</string>
+
+    <string name="text_read_later">Read Later</string>
+    <string name="text_confirm_delete">You wanna delete your questions ?</string>
+
+    <string name="text_deleted" >Delete</string>
+    <string name="text_save_image">Save Image</string>
+    <string name="text_copy_url">Copy Content</string>
+    <string name="text_save_image_succses">Success Save Image</string>
+    <string name="text_copy_url_clipboard">Content have been Copy</string>
+    <string name="text_sunting">Edit</string>
+
+    <string name="text_comentar">Create Comment.....</string>
+    <string name="kosong">No Responses</string>
+    <string name="facebook_app_id">189902258106587</string>
+    <string name="app_secret">6cf8e002708592002f897d79709358de</string>
+
+    <string name="text_video">video</string>
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="text_confirm_signout" >Anda yakin akan keluar?</string>
+    <string name="banner">ca-app-pub-4914903732265878/7685376540</string>
+
+    <string name="text_kategori_wisata">Wisata</string>
+    <string name="text_kategori_budaya">Budaya</string>
+    <string name="text_kategori_kuliner">Kuliner</string>
+    <string name="text_kategori_semua">Semua Kategori</string>
+    <string name="text_kategori">Semua Kategori</string>
+
+    <string name="text_masakan">Masakan</string>
+    <string name="text_minuman">Minuman</string>
+    <string name="text_penganan">Penganan</string>
+
+    <string name="text_tulis_comentar">Tulis Komentar ....</string>
+    <string name="text_agngkutan_pariwisata">Angkutan Pariwisata</string>
+    <string name="text_agngkutan_sewa">Angkutan Sewa</string>
+    <string name="text_agngkutan_kapal">Angkutan Kapal</string>
+
+    <string name="lokasi_blank">Fasilitas yang anda cari tidak ada, Pastikan GPS anda hidup</string>
+
+    <string name="buka">OPEN</string>
+    <string name="tutup">CLOSED</string>
+    <string name="text_semua_kategori">Semua</string>
+    <string name="text_response">Responses</string>
+    <string name="text_take_avatar">Take Image First</string>
+    <string name="text_email_not_valid">Email Not Valid!</string>
+
+    <string name="text_password_must_more">Your Password so weak, must more than 6 character!</string>
+
+    <string name="text_wisata_alam">Natural Tourism</string>
+    <string name="text_wisata_religi">Religious Tourism</string>
+    <string name="text_wisata_sejarah">Travel History </string>
+    <string name="text_wisata_pantai">Wisata Pantai</string>
+    <string name="text_wisata_keluarga">Family Travel</string>
+    <string name="text_wisata_budaya">Culture Tour</string>
+    <string name="text_wisata_kuliner">Culinary Tour</string>
+
+    <string name="text_reponse_null">Belum ada komentar</string>
+
+    <string name="text_please_login_first">Please Login Before Your Posting Questions</string>
+
+    <string name="kategori_alam">Visit the natural attractions that exist in West Sumatra</string>
+    <string name="kategori_kuliner">Enjoy whatever culinary in West Sumatra</string>
+    <string name="kategori_sejarah">Visit Historic Sites in West Sumatra</string>
+    <string name="kategori_budaya">Recognize any culture in West Sumatra</string>
+    <string name="kategori_religi">Visit the religious tourism in West Sumatra</string>
+    <string name="kategori_keluarga">Enjoy the holidays with family in rides in West Sumatra</string>
+
+    <string name="text_question_deleted_success">Success deleted question</string>
+    <string name="text_question_deleted_failed">Failed delete question</string>
+
+    <string name="iklan_detail_activity">ca-app-pub-4503297165525769/5820834332</string>
+    <string name="iklan_main_activity">ca-app-pub-4503297165525769/2867367938</string>
+    <string name="iklan_interestial">ca-app-pub-4503297165525769/7297567538</string>
+</resources>
+

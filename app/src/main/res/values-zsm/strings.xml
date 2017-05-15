@@ -1,0 +1,304 @@
+<resources>
+    <string name="app_version">1.0.0.0</string>
+    <string name="app_name">Sumbar Rancak</string>
+    <!--ini for navigasi-->
+    <string name="tanya_wisata">Tanya Wisata</string>
+    <string name="article">Artikel</string>
+    <string name="kuliner">Makanan</string>
+    <string name="store">Toko</string>
+    <string name="booking_travel">Pesan Travel</string>
+    <string name="event">Acara</string>
+    <string name="transportation">Transportasi</string>
+    <string name="daerah">Daerah</string>
+    <string name="profile">AWAK</string>
+    <string name="weather">CUACA</string>
+    <string name="about">TENTANG APLIKASI</string>
+    <string name="home">PALANTA</string>
+    <string name="save">SIMPAN</string>
+    <string name="story">BAGI CERITA</string>
+    <string name="languange">BAHASO</string>
+    <!--habis-->
+
+    <string name="text_register_failed">Pendaftaran  Gagal </string>
+    <string name="text_look_offer">Lihat Tawaran</string>
+    <string name="text_message_here">Masukkan pesan disini</string>
+    <string name="text_no_chat">Belum ada chat</string>
+    <string name="err_msg_name">Enter full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="like">Suka</string>
+    <string name="komentar">Komentar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="shared_element_image_cover">transitionImage</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_question_warning" >Pertanyaan belum ditulis</string>
+    <string name="posttopik">Topik</string>
+    <string name="text_camera">Kamera</string>
+    <string name="text_gallery" >Gallery</string>
+    <string name="text_take" >Ambil Menggunakan</string>
+    <string name="tvdata_list_item_adapter" >data</string>
+    <string name="text_sending" >Kirim</string>
+    <string name="text_loading">Loading</string>
+    <string name="text_post_question_success" >Pertanyaan berhasil dikirim</string>
+    <string name="no_connection_for_post">Tidak ada koneksi, Pertanyaan akan disimpan</string>
+    <string name="text_like"> Disukai</string>
+    <string name="text_gagal_like">gagal menyukai</string>
+    <string name="text_post_question_failed" >Pertanyaan gagal dikirim</string>
+    <string name="message_dialog_info">Message Here</string>
+    <string name="email">Email</string>
+    <string name="password">Kato Kunci</string>
+    <string name="text_about_seller">Penjual</string>
+    <string name="text_call_seller">Hubungi Penjual</string>
+    <string name="text_pesan">Kirim Pesan </string>
+    <string name="login">MASUAK</string>
+    <string name="text_comentar">Masukan komentar</string>
+    <string name="register">MANDAFTAR</string>
+    <string name="ubah_password">Ubah Kata Sandi</string>
+    <string name="text_like_already">Telah disukai</string>
+    <string name="text_indonesia">Indonesia</string>
+    <string name="text_minang">Minang</string>
+    <string name="text_english">English</string>
+    <string name="text_emailpassword_null">Email dan Kata sandi tidak boleh kosong</string>
+    <string name="title_dialog_changelanguage">Ubah Bahasa</string>
+    <string name="dialog_login">Masuk...</string>
+    <string name="text_welcome" >Selamat Datang</string>
+    <string name="text_login_failed">Login gagal</string>
+    <string name="text_next">Selanjutnya</string>
+    <string name="text_no_data">Data Kosong</string>
+    <string name="text_pertanyaan_ditambah">Pertanyaan Telah ditambah</string>
+
+    <string name="text_wisata">Wisata</string>
+    <string name="text_kuliner">Kuliner</string>
+    <string name="text_budaya">Budaya</string>
+    <string name="text_lokasi">Lokasi</string>
+    <string name="text_category">Kategori</string>
+    <string name="tulis_pertanyaan">Tulis Pertanyaan disini</string>
+    <string name="tanya_wisat">TANYO WISATA</string>
+    <string name="exit">Tap dua kali untuk Keluar</string>
+    <string name="text_download_failed">download data gagal</string>
+    <string name="kosong">Belum ada Komentar</string>
+    <string name="text_logout">Apakah anda akan keluar Aplikasi</string>
+
+    <string name="article_kuliner">Kuliner</string>
+    <!--This for handle error-->
+    <string name="error_timeout">Oops! Koneksi anda mengalami kesalahan.</string>
+    <string name="error_auth_failure">Oops! Terjadi Kesalahan.</string>
+    <string name="error_network">Oops! Kesalahan di jaringan.</string>
+    <string name="error_parser">Oops! Data diterima tidak terbaca.</string>
+    <string name="error_server_die">Oops! Maaf kami sedang maintenance.</string>
+    <string name="text_tryAgain">Coba Lagi</string>
+    <string name="error_try_again">Maaf telah terjadi kesalahan.</string>
+
+
+    <string name="text_complete_from">Mohon Isi Semua Form </string>
+
+    <string name="login_forgotpassword">Lupa password</string>
+
+    <string name="text_read_later">Baca nanti</string>
+    <string name="text_delete">Hapuih</string>
+    <string name="text_confirm_delete">Apakah anda akan menghapus pertanyaan anda?</string>
+    <string name="text_no">Tidak</string>
+    <string name="text_yes">Ya</string>
+    <string name="text_deleted" >Hapus</string>
+    <string name="text_save_image">Simpan Gambar</string>
+    <string name="text_copy_url">Salin Tanyo</string>
+    <string name="text_save_image_succses">Gambar Berhasil disimpan</string>
+    <string name="text_copy_url_clipboard">Url telah disalin ke Clipboard</string>
+    <string name="text_sunting">Sunting</string>
+
+    <string name="facebook_app_id">189902258106587</string>
+    <string name="app_secret">6cf8e002708592002f897d79709358de</string>
+
+    <string name="text_video">video</string>
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="text_confirm_signout" >Anda yakin akan keluar?</string>
+    <string name="banner">ca-app-pub-4914903732265878/7685376540</string>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-4914903732265878/7685376540</string>
+    <string name="interstitial_full_screen">ca-app-pub-4914903732265878/4371983347</string>
+    <string name="text_post_question_here">Pertanyaan Anda Belum di Tulis </string>
+    <string name="text_tags_not_choise">Pertanyaan Anda Belum di Tulis </string>
+    <string name="text_edit_profile_succes">Profil telah berubah</string>
+    <string name="text_edit_profile_failed">Profil gagal di ubah</string>
+    <string name="text_need_account">BELUM PUNYA AKUN ?</string>
+    <string name="text_or">ATAU</string>
+    <string name="text_login_facebook">MASUAK JO FACEBOOK</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions.</string>
+    <string name="nearme">LOKASI DAKEK AWAK</string>
+    <string name="text_cerita">CARITO MINANG</string>
+    <string name="text_resep">RESEP MASAKAN</string>
+
+    <string name="text_bahasa">Bahaso</string>
+    <string name="text_logout_app">Kalua</string>
+    <string name="text_login">Masuak</string>
+    <string name="text_share">Bagian</string>
+    <string name="text_save">Simpan</string>
+
+    <!--Bahasa-->
+    <string name="text_id">id</string>
+    <string name="text_en">en</string>
+    <string name="text_zsm">zsm</string>
+
+    <!--Kota Kabupaten-->
+    <string name="all_city">Semua Kota dan Kabupaten</string>
+    <string name="kota_bukittinggi">Kota Bukittinggi</string>
+    <string name="kota_padang">Kota Padang</string>
+    <string name="kota_padang_panjang">Kota Padang Panjang</string>
+    <string name="kota_pariaman">Kota Pariaman</string>
+    <string name="kota_payakumbuh">Kota Payakumbuh</string>
+    <string name="kota_sawahlunto">Kota Sawahlunto</string>
+    <string name="kota_solok">Kota Solok</string>
+    <string name="kab_agam">Kabupaten Agam</string>
+    <string name="kab_dharmasraya">Kabupaten Dharmasraya</string>
+    <string name="kab_kepulauan_mentawai">Kabupaten Kapulauan Mentawai</string>
+    <string name="kab_lima_puluh_kota">Kabupaten Lima Puluh Kota</string>
+    <string name="kab_padang_pariaman">Kabupaten Padang Pariaman</string>
+    <string name="kab_pasaman">Kabupaten Pasaman</string>
+    <string name="kab_pasaman_barat">Kabupaten Pasaman Barat</string>
+    <string name="kab_pesisir_selatan">Kabupaten Pesisir Selatan</string>
+    <string name="kab_sijunjung">Kabupaten Sijunjung</string>
+    <string name="kab_solok">Kabupaten Solok</string>
+    <string name="kab_solok_selatan">Kabupaten Solok Selatan</string>
+    <string name="kab_tanah_datar">Kabupaten Tanah Datar</string>
+
+    <string name="semua_kategori">Semua Kategori</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+    <string name="kafe">Kafe</string>
+    <string name="restorant">Restorant</string>
+    <string name="bank">Bank</string>
+    <string name="atm">ATM</string>
+    <string name="museum">Museum</string>
+    <string name="kantor_polisi">Kantor Polisi</string>
+    <string name="sekolah">Sekolah</string>
+    <string name="pasar">Pasar</string>
+    <string name="bandara">Bandara</string>
+    <string name="toko_makanan">Toko Makanan</string>
+    <string name="kebun_binatang">Kebun Binatang</string>
+    <string name="universitas">Universitas</string>
+    <string name="kantor_pos">Kantor Pos</string>
+    <string name="pemadam_kebakaran">Pemadam Kebakaran</string>
+    <string name="parkir">Parkir</string>
+    <string name="stasiun">Stasiun</string>
+    <string name="taksi">Taksi</string>
+    <string name="mesjid">Mesjid</string>
+    <string name="mall">Mall</string>
+
+    <string name="text_terbaru">Terbaru</string>
+    <string name="text_terlama">Terlama</string>
+
+    <string name="article_wisata">Wisata</string>
+    <string name="article_budaya">Budaya</string>
+    <string name="angkutan">Angkutan Pariwisata</string>
+
+    <string name="size12">12 SP</string>
+    <string name="size14">14 SP</string>
+    <string name="size16">16 SP</string>
+    <string name="size18">18 SP</string>
+
+    <string name="text_login_first">Untuk membaco lebih lanjuik,\nsilakan masuak terlebih dahulu.</string>
+
+    <string name="text_kelembaban">Kelembaban</string>
+    <string name="text_kec_angin">Kec. Angin</string>
+    <string name="text_arah_angin">Arah Angin</string>
+
+    <string name="text_semua_terdekat">Semua Yang Terdekat</string>
+    <string name="text_back">Baliak</string>
+    <string name="text_about">Aplikasi Wisata Minang Sumbar ini merupakan aplikasi wisata Sumatera Barat, Aplikasi ini dibuat untuk memudahkan Para wisatawan yang berkunjung ke Sumatera Barat Dalam mencari tempat wisata,  Dalam Aplikasi ini kita juga bisa bertanya dan menjawab pertanyaan, Banyak Fitur2 yang terdapat dalam aplikasi ini cuaca, artikel, tanya jawab, lokasi wisata dll, Aplikasi ini masih dalam tahap Di kembangkan dan masih banyak terdapat bug sana sini, Untuk itu mohon maaf bila ada kekurangan dalam Aplikasi ini,karena ini masih dalam tahap Uji Coba</string>
+
+    <string name="satuan_buah">Buah</string>
+    <string name="satuan_stell">Stell</string>
+    <string name="satuan_pasang">Pasang</string>
+
+    <string name="text_semua_lokasi">SEMUA LOKASI</string>
+    <string name="text_search">Search City</string>
+    <string name="kota_dan_kabupaten">PILIH KOTA/KABUPATEN</string>
+    <string name="text_commentar_blank">Komentar Anda Masih Kosong</string>
+    <string name="text_loading_response">Memuat Komentar</string>
+    <color name="text_like">#bdbdbd</color>
+    <string name="text_register_succses">Register Success </string>
+
+    <string name="change_font_size">Ubah Ukuran Huruf</string>
+    <string name="save_to_bookmark">Save to Bookmark</string>
+    <string name="text_bookmark_empty">Bookmark masih kosong</string>
+    <string name="text_update_avatar">Ubah Foto</string>
+    <string name="text_updated_avatar_failed">Gagal marubah foto</string>
+
+    <string name="text_artikel_lama">Artikel Lama</string>
+    <string name="text_artikel_baru">Artikel Baru</string>
+    <string name="text_urutkan">Urutkan Artikel</string>
+
+    <string name="str_atv_places">Enter Place Here</string>
+    <string name="API_KEY_MAPS">AIzaSyDnwLF2-WfK8cVZt9OoDYJ9Y8kspXhEHfI</string>
+
+    <string name="text_later">BEKO</string>
+
+    <string name="text_kategori_wisata">Wisata</string>
+    <string name="text_kategori_budaya">Budaya</string>
+    <string name="text_kategori_kuliner">Kuliner</string>
+    <string name="text_kategori_semua">Semua Kategori</string>
+    <string name="text_kategori">Semua Kategori</string>
+
+    <string name="text_masakan">Masakan</string>
+    <string name="text_minuman">Minuman</string>
+    <string name="text_penganan">Penganan</string>
+
+    <string name="text_tulis_comentar">Tulis Komentar ....</string>
+    <string name="text_agngkutan_pariwisata">Angkutan Pariwisata</string>
+    <string name="text_agngkutan_sewa">Angkutan Sewa</string>
+    <string name="text_agngkutan_kapal">Angkutan Kapal</string>
+
+    <string name="lokasi_blank">Fasilitas yang anda cari tidak ada, Pastikan GPS anda hidup</string>
+
+    <string name="buka">BUKAK</string>
+    <string name="tutup">TUTUIK</string>
+    <string name="text_semua_kategori">Semua</string>
+
+    <string name="text_no_weather_fragment" >Informasi iklim belum diperbaharui, silakan di cek kembali</string>
+    <string name="text_response">komentar</string>
+    <string name="text_take_avatar">Ambil Photo Profile dulu</string>
+
+    <string name="text_male">Laki-laki</string>
+    <string name="text_female">Padusi</string>
+
+    <string name="text_login_before">SILAHKAN LOGIN DULU UNTUK MENYUKAI KONTEN INI</string>
+    <string name="text_login_before_video">SILAHKAN LOGIN DULU UNTUK MEMUTAR VIDEO</string>
+
+    <string name="text_comment">Komentar</string>
+    <string name="text_confirm_delete_comment">Komentar ini akan di hapus ?</string>
+    <string name="text_fullname">Nama Lengkap</string>
+    <string name="text_gender">Jenis Kelamin</string>
+    <string name="text_birthdate">Tanggal Lahir</string>
+    <string name="title_dialog_gender">Jenis Kelamin</string>
+    <string name="text_password_must_more">Kata sandi anda terlalu lemah, harus lebih dari 6 karakter!</string>
+
+    <string name="text_wisata_alam">Wisata Alam</string>
+    <string name="text_wisata_religi">Wisata Religi</string>
+    <string name="text_wisata_sejarah">Wisata Sejarah</string>
+    <string name="text_wisata_pantai">Wisata Pantai</string>
+    <string name="text_wisata_keluarga">Wisata Keluarga</string>
+    <string name="text_wisata_budaya">Wisata Budaya</string>
+    <string name="text_wisata_kuliner">Wisata Kuliner</string>
+
+    <string name="text_email_not_valid">Email Tidak Valid !</string>
+    <string name="text_reponse_null">Belum ada komentar</string>
+
+    <string name="text_please_login_first">Kok Sanak Nio Kabatanyo, Silahkan Sanak Masuak Ka Aplikasi Dulu</string>
+
+    <string name="kategori_alam">Tamui Wisata Alam Yang Ado Di Sumatera Barat</string>
+    <string name="kategori_kuliner">Rasoi Apo Sajo Kuliner Khas Sumatera Barat</string>
+    <string name="kategori_sejarah">Kunjungi Tampek Bersejarah Yang Ado Di Sumatera Barat</string>
+    <string name="kategori_budaya">Kenali Kebudayaan Apo Sajo di Sumatera Barat</string>
+    <string name="kategori_religi">Kunjungi Wisata Religi Yang Ado Di Sumatera Barat</string>
+    <string name="kategori_keluarga">Nikmati Liburan Basamo Keluarga Di Wahana Permainan Yang Ado Di Sumatera Barat</string>
+
+    <string name="text_question_deleted_success">Berhasil maapuih tanyo</string>
+    <string name="text_question_deleted_failed">Gagal maapuih tanyo</string>
+
+    <string name="iklan_detail_activity">ca-app-pub-4503297165525769/5820834332</string>
+    <string name="iklan_main_activity">ca-app-pub-4503297165525769/2867367938</string>
+    <string name="iklan_interestial">ca-app-pub-4503297165525769/7297567538</string>
+
+</resources>
+

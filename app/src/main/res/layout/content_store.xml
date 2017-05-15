@@ -1,0 +1,200 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title_resep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strawberry"
+                android:textColor="@color/text_color_black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_product_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Content Product" />
+
+            <TextView
+                android:id="@+id/tv_product_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Listed 24 minutes ago from paijo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_price"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/price" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_price"
+                    android:gravity="center_vertical"
+                    android:text="Rp 20.000/Kg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_face_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tv_product_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/iv_like"
+                    android:gravity="center_vertical"
+                    android:text="2 Like" />
+
+                <!-- <TextView
+                         android:id="@+id/tv_product_ubah"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:textSize="15dp"
+                         android:layout_alignParentRight="true"
+                         android:text="UBAH" />-->
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/dropshadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_about_seller" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_seller_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ll_call"
+                android:orientation="horizontal">
+
+                <asywalul.minang.wisatasumbar.widget.Rounded
+                    android:id="@+id/iv_seller"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_face_black_24dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/activity_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_seller_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fullname"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_seller_location"
+                            style="@style/TextCommon.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ciawi, Bogor"
+                            android:textColor="@color/text_color_black" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <!--
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/call"
+                                                android:src="@drawable/call" />-->
+
+
+                <TextView
+                    style="@style/TextCommon.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/habis"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:text="STOCK HABIS" />
+
+                <!--   <TextView
+                       style="@style/TextCommon.Small"
+                       android:id="@+id/hubungi"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginTop="10dp"
+                       android:text="@string/text_call_seller" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

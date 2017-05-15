@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_activity"
+    android:paddingBottom="3dp"
+    android:paddingTop="7dp">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/item_header"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/layout_header"
+        android:id="@+id/rl_forum_chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ic_face_black_24dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_comment_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSenderName_left"
+            android:text="Hello I am chandler. Yes Chandler Bing You cocksucker"
+            android:textColor="@color/text_color_white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_comment_left"
+            android:text="5:20PM"
+            android:textColor="@color/text_color_white"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/tvSenderName_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abinash Neupane"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_forum_chat_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl_forum_chat_left"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/bubble_white"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_comment_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSenderName_right"
+            android:text="Hello I am chandler"
+            android:textColor="#323232"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_time_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_comment_right"
+            android:text="5:20PM"
+            android:textColor="#b1b1b1"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/tvSenderName_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abinash Neupane"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

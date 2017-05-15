@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        style="@style/news_summary_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_compose_response"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="5dp"
+        card_view:cardCornerRadius="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_root"
+            android:paddingBottom="10dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <asywalul.minang.wisatasumbar.widget.Rounded
+                android:id="@+id/iv_avatar"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_blank"
+                android:transitionName="@string/transition_photos"/>
+
+            <TextView
+                android:id="@+id/tv_title_resep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_location"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/item_margin"
+                android:textAllCaps="true"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/font_normal"
+                android:text="习近平:吹响建设科技强国号角国号角国号角"/>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_resep"
+                android:layout_marginRight="@dimen/item_margin"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/font_small"
+                android:text="科技是国之利器，中国人民生活要好，必须有强大科技。"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:layout_marginBottom="4dp"
+                android:layout_toLeftOf="@+id/tv_time"
+                android:layout_marginRight="@dimen/item_margin"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/font_tiny"
+                android:text="asywalul fikri"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="@dimen/item_margin"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/font_tiny"
+                android:text="05-28 20:09"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

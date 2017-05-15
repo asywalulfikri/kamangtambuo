@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/side_nav_bar"
+    android:id="@+id/mWeatherLl"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_foto_user"
+            android:layout_width="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="70dp"
+            fresco:roundedCornerRadius="100dp"
+            fresco:roundingBorderWidth="2dp"
+            fresco:roundingBorderColor="@color/text_color_white"
+            fresco:placeholderImage="@drawable/ic_profile_blank"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_foto_user"
+            android:textColor="@color/text_color_white"
+            android:textSize="17sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Logout"
+        android:textSize="12dp"
+        android:id="@+id/btn_logout"
+        android:background="@color/text_color_black"
+        android:layout_gravity="right" />
+
+</LinearLayout>

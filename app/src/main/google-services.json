@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "321792906879",
+    "firebase_url": "https://wisatasumbar-1219.firebaseio.com",
+    "project_id": "wisatasumbar-1219",
+    "storage_bucket": "wisatasumbar-1219.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321792906879:android:224dba8988ff00ff",
+        "android_client_info": {
+          "package_name": "asywalul.minang.wisatasumbar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD226DaQxjMTQVJWJOUsFpKMzlImq66z8Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
