@@ -46,7 +46,7 @@ public class DirectionFinder {
     private String createUrl() throws UnsupportedEncodingException {
         String urlOrigin = URLEncoder.encode(origin, "utf-8");
         String urlDestination = URLEncoder.encode(destination, "utf-8");
-        Log.d(DIRECTION_URL_API + "origin=" + origin + "&destination=" + destination + "&key=" + GOOGLE_API_KEY,"yaps");
+        Log.d("pantez", DIRECTION_URL_API+ "origin=" + origin + "&destination=" + destination + "&key=" + GOOGLE_API_KEY);
         return DIRECTION_URL_API + "origin=" + origin + "&destination=" + destination + "&key=" + GOOGLE_API_KEY;
     }
 

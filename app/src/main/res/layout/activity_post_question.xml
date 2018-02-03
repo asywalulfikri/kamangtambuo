@@ -108,6 +108,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="46dp"
                         android:contentDescription="@string/app_name"
+                        android:tint="#aaa"
                         app:srcCompat="@drawable/ic_take_image_2"
                         android:visibility="visible" />
                 </RelativeLayout>

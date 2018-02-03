@@ -170,8 +170,8 @@ public class VolleyParsing {
                         wisata.title    = (!itemJson.isNull(Cons.WISATA_TITLE)) ? itemJson.getString(Cons.WISATA_TITLE) : "";
                         wisata.tags     = (!itemJson.isNull(Cons.WISATA_TAGS)) ? itemJson.getString(Cons.WISATA_TAGS) : "";
                        // wisata.dateSubmitted = (!itemJson.isNull(Cons.WISATA_DATE_SUBMITTED)) ? itemJson.getString(Cons.WISATA_DATE_SUBMITTED) : "";
-                      //  wisata.latitude   = (!itemJson.isNull(Cons.WISATA_LATITUDE)) ? itemJson.getString(Cons.WISATA_LATITUDE) : "";
-                      //  wisata.longitude  = (!itemJson.isNull(Cons.WISATA_LONGITUDE)) ? itemJson.getString(Cons.WISATA_LONGITUDE) : "";
+                        wisata.latitude   = (itemJson.has("langtitude")) ? itemJson.getString("langtitude") : "";
+                        wisata.longitude  = (itemJson.has("longtitude")) ? itemJson.getString("longtitude") : "";
                         wisata.attachment = (!itemJson.isNull(Cons.WISATA_ATTACHMENT)) ? itemJson.getString(Cons.WISATA_ATTACHMENT) : "";
                         wisata.location = (!itemJson.isNull("idk")) ? itemJson.getString("idk") : "";
                      //   wisata.category = (!itemJson.isNull(Cons.WISATA_CATEGORY)) ? itemJson.getString(Cons.WISATA_CATEGORY) : "";

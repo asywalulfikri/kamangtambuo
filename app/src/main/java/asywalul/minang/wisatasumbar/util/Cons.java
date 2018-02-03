@@ -33,7 +33,7 @@ public class Cons {
     public static final String DBVERSION_KEY = "dbversion";
 
     public static final String API_KEY = "AIzaSyAwxSpIUZamaTh9iRXlb5-WAodYwLyJJkQ";
-    public static final String GOOGLE_MAP_APIKEY = "AIzaSyDnwLF2-WfK8cVZt9OoDYJ9Y8kspXhEHfI";
+    public static final String GOOGLE_MAP_APIKEY = "AIzaSyDg25_OBTJ3Yq5JrWWY_S4JsrA0Bfb9Ukc";
     public static final String ANDROID_VERSION = "androidVersion";
     public static final String APP_VERSION = "appVersion";
 

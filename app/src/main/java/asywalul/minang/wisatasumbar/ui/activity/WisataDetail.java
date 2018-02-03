@@ -160,11 +160,11 @@ public class WisataDetail extends BaseActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        mAdView = (AdView)findViewById(R.id.adView);
+      /*  mAdView = (AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
         mAdView.loadAd(adRequest);
-
+*/
 
         commentt = (TextView) findViewById(R.id.et_comment);
         mCommentsView = (LinearLayout) findViewById(R.id.rl_comments);
@@ -172,10 +172,9 @@ public class WisataDetail extends BaseActivity {
 
         mCommentAdapter = new CommentListAdapter(this);
 
-       /* if(mWisataList.latitude.equals("")||mWisataList.longitude.equals("")){
+        if(mWisataList.latitude.equals("")||mWisataList.longitude.equals("")){
             fab.setVisibility(View.GONE);
-        }*/
-       fab.setVisibility(View.GONE);
+        }
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

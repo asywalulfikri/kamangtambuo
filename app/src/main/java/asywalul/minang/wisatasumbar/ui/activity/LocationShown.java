@@ -297,7 +297,8 @@ public class LocationShown extends FragmentActivity implements OnMapReadyCallbac
     }
 
     private void sendRequest() {
-        String origin = String.valueOf(latitude)+","+String.valueOf(longitude);
+       // String origin = String.valueOf(latitude)+","+String.valueOf(longitude);
+        String origin = latitudewisata+","+longitudewisata;
         Log.e("orininya",origin);
         String destination = latitudewisata+","+longitudewisata;
         Log.e("Dest",destination);
