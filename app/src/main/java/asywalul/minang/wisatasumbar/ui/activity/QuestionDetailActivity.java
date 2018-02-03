@@ -340,14 +340,14 @@ public class QuestionDetailActivity extends BaseActivity {
     private void postComment(final String comment, final String commentId, final String timeunix) {
 
         List<NameValuePair> params = new ArrayList<NameValuePair>(1);
-        params.add(new BasicNameValuePair(Cons.RESPONSE_ID, commentId));
+       // params.add(new BasicNameValuePair(Cons.RESPONSE_ID, commentId));
         params.add(new BasicNameValuePair(Cons.CONV_CONTENT, comment));
         params.add(new BasicNameValuePair(Cons.KEY_ID, iduser));
         params.add(new BasicNameValuePair(Cons.CONV_ID, mIdquestion));
-        params.add(new BasicNameValuePair(Cons.CONV_DATE_SUBMITTED, time));
-        params.add(new BasicNameValuePair(Cons.TIME_UNIX, timeunix));
+       // params.add(new BasicNameValuePair(Cons.CONV_DATE_SUBMITTED, time));
+       // params.add(new BasicNameValuePair(Cons.TIME_UNIX, timeunix));
 
-        String rawUrl = Cons.CONVERSATION_URL + "/postComent.php";
+        String rawUrl = Cons.CONVERSATION_URL + "PostComment";
         StringRequest strReq = new StringRequest(Request.Method.POST,
                 rawUrl,
                 new Response.Listener<String>() {
@@ -393,12 +393,12 @@ public class QuestionDetailActivity extends BaseActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> mparams = new HashMap<String, String>();
-                mparams.put(Cons.RESPONSE_ID, commentId);
+               // mparams.put(Cons.RESPONSE_ID, commentId);
                 mparams.put(Cons.CONV_CONTENT, comment);
                 mparams.put(Cons.KEY_ID, iduser);
                 mparams.put(Cons.CONV_ID, mIdquestion);
-                mparams.put(Cons.CONV_DATE_SUBMITTED, time);
-                mparams.put(Cons.TIME_UNIX, timeunix);
+             /*   mparams.put(Cons.CONV_DATE_SUBMITTED, time);
+                mparams.put(Cons.TIME_UNIX, timeunix);*/
                 return mparams;
             }
         };

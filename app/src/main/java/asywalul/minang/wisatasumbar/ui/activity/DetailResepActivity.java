@@ -81,10 +81,10 @@ public class DetailResepActivity extends BaseActivity  {
         mLayoutSlider  = (RelativeLayout)findViewById(R.id.rl_home_slider);
 
 
-        mAdView = (AdView)findViewById(R.id.adView);
+       /* mAdView = (AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
 
         Bundle bundle = getIntent().getExtras();
         mResep = bundle.getParcelable(Util.getIntentName("resep"));

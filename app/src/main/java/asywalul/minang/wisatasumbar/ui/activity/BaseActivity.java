@@ -493,12 +493,12 @@ public class BaseActivity extends AppCompatActivity {
             } else {
                 if (Cons.ENABLE_DEBUG) {
                     InputStream is	= new FileInputStream(database);
-                    OutputStream os = new FileOutputStream(Util.getAppDir() + "/cerita.db");
+                    OutputStream os = new FileOutputStream(Util.getAppDir() + "/wisatasumbar.db");
 
                     byte[] buffer	= new byte[1024];
                     int length;
 
-                    Debug.i(Cons.TAG, "[DEVONLY] Copying db " + database + " to " + Util.getAppDir() + "/cerita.db");
+                    Debug.i(Cons.TAG, "[DEVONLY] Copying db " + database + " to " + Util.getAppDir() + "/wisatasumbar.db");
 
                     while ((length = is.read(buffer)) > 0) {
                         os.write(buffer, 0, length);

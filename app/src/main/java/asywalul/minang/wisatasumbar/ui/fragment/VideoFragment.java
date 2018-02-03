@@ -155,7 +155,7 @@ public class VideoFragment extends BaseListFragment implements SwipeRefreshLayou
                         && (mQuestionLv.getLastVisiblePosition() - mQuestionLv.getHeaderViewsCount() -
                         mQuestionLv.getFooterViewsCount()) >= (mAdapter.getCount() - 1)) {
 
-                    loadTask3();
+                   // loadTask3();
                 }
             }
 
@@ -200,7 +200,7 @@ public class VideoFragment extends BaseListFragment implements SwipeRefreshLayou
     public void loadMore() {
         super.loadMore();
 
-        loadTask3();
+       // loadTask3();
     }
 
     protected void showList() {
@@ -427,7 +427,7 @@ public class VideoFragment extends BaseListFragment implements SwipeRefreshLayou
     public void loadTask2() {
         startCountTime();
         page = 1;
-        String url = Cons.CONVERSATION_URL + "/listVideo.php?userId="+iduser+"&page="+page+"&count=20";
+        String url = Cons.CONVERSATION_URL + "ListVideo";
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

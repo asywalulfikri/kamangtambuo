@@ -659,7 +659,7 @@ public class PostQuestionAcivity extends BaseActivity implements LocationListene
         progressDialog = new CustomProgressDialog(getActivity(), getString(R.string.text_sending));
         progressDialog.show();
 
-        String url = Cons.CONVERSATION_URL + "/post_question2.php";
+        String url = Cons.CONVERSATION_URL + "/ListQuestion/";
 
         /*if(android.os.Build.VERSION.SDK_INT > 17){
             latitude = String.valueOf(location.getLatitude());
@@ -712,8 +712,9 @@ public class PostQuestionAcivity extends BaseActivity implements LocationListene
                 obj.put(Cons.CONV_DATE_SUBMITTED,waktu);
                 obj.put(Cons.CONV_LATITUDE,latitude);
                 obj.put(Cons.CONV_LONGITUDE,longitude);
-                obj.put(Cons.ANDROID_VERSION,String.valueOf(android.os.Build.VERSION.SDK_INT));
-                obj.put(Cons.APP_VERSION,getString(R.string.app_version));
+                obj.put(Cons.CONV_TYPE,"questions");
+              /*  obj.put(Cons.ANDROID_VERSION,String.valueOf(android.os.Build.VERSION.SDK_INT));
+                obj.put(Cons.APP_VERSION,getString(R.string.app_version));*/
                 return obj;
 
 

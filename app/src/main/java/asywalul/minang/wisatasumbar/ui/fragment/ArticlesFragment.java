@@ -110,10 +110,10 @@ public class ArticlesFragment extends BaseListFragment implements SwipeRefreshLa
 
         //<<<-------------------> INISIAL USERID <----------------------->>>>>>
         user = getUser();
-        mAdView             = (AdView) root.findViewById(R.id.adView);
+       /* mAdView             = (AdView) root.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
         page = 1;
         mLoadingLayout      = (LoadingLayout) root.findViewById(R.id.layout_loading);
         swipContainer       = (SwipeRefreshLayout) root.findViewById(R.id.ptr_layout);

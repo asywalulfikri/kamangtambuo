@@ -54,8 +54,10 @@ import asywalul.minang.wisatasumbar.ui.activity.InterestialLogout;
 import asywalul.minang.wisatasumbar.ui.activity.ListLocationNearby;
 import asywalul.minang.wisatasumbar.ui.activity.LoginActivity;
 import asywalul.minang.wisatasumbar.ui.activity.ProfileActivity;
+import asywalul.minang.wisatasumbar.ui.activity.RekomendasiListWisata;
 import asywalul.minang.wisatasumbar.ui.activity.ResepListActivity;
 import asywalul.minang.wisatasumbar.ui.activity.SearchListActivity;
+import asywalul.minang.wisatasumbar.ui.activity.SearchWisata;
 import asywalul.minang.wisatasumbar.ui.activity.WeatherActivity;
 import asywalul.minang.wisatasumbar.ui.fragment.BrowseStoreFragment;
 import asywalul.minang.wisatasumbar.ui.fragment.QuestionFragment;
@@ -130,7 +132,7 @@ public class MainActivityBeranda extends BaseActivity {
         toobar();
         updateView();
         setSearchView();
-        initDatabase();
+//        initDatabase();
 
     }
 
@@ -167,7 +169,7 @@ public class MainActivityBeranda extends BaseActivity {
             public boolean onQueryTextSubmit(String query) {
                 mSearchView.close(false);
                 mHistoryDatabase.addItem(new SearchItem(query));
-                Intent intent = new Intent(getActivity(), SearchListActivity.class);
+                Intent intent = new Intent(getActivity(), SearchWisata.class);
                 intent.putExtra("keyword", query);
                 startActivityForResult(intent,RESULT_OK);
                 return false;
@@ -188,7 +190,7 @@ public class MainActivityBeranda extends BaseActivity {
                 TextView textView = (TextView) view.findViewById(R.id.textView_item_text);
                 String text = textView.getText().toString();
 //                mHistoryDatabase.addItem(new SearchItem(text));
-                Intent intent = new Intent(getActivity(), SearchListActivity.class);
+                Intent intent = new Intent(getActivity(), SearchWisata.class);
                 intent.putExtra("keyword", text);
                 startActivityForResult(intent,RESULT_OK);
             }
@@ -200,10 +202,11 @@ public class MainActivityBeranda extends BaseActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new BrowseStoreFragment(), getString(R.string.home));
+        adapter.addFrag(new RekomendasiListWisata(), "Rekomendasi Wisata");
         adapter.addFrag(new QuestionFragment(),getString(R.string.tanya_wisat));
         adapter.addFrag(new ArticlesFragmentWisata(), getString(R.string.article_wisata));
-        adapter.addFrag(new ArticlesFragmentKuliner(), getString(R.string.article_kuliner));
-        adapter.addFrag(new ArticlesFragmentBudaya(), getString(R.string.article_budaya));
+       // adapter.addFrag(new ArticlesFragmentKuliner(), getString(R.string.article_kuliner));
+      //  adapter.addFrag(new ArticlesFragmentBudaya(), getString(R.string.article_budaya));
         adapter.addFrag(new VideoFragment(), getString(R.string.text_video));
 
         viewPager.setAdapter(adapter);

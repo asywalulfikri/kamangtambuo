@@ -240,7 +240,7 @@ public class QuestionAdapterr extends BaseAdapter {
 
 
 
-            if(conversation.dateSubmitted.equals(null)||conversation.dateSubmitted.equals("")){
+           /* if(conversation.dateSubmitted.equals(null)||conversation.dateSubmitted.equals("")){
                  if(conversation.time.equals(null)||conversation.dateSubmitted.equals("")){
                      holder.tvDate.setVisibility(View.GONE);
                  }else {
@@ -248,7 +248,7 @@ public class QuestionAdapterr extends BaseAdapter {
                  }
             }else {
                 holder.tvDate.setText(TimeUtil.unixToTimeAgo(conversation.dateSubmitted));
-            }
+            }*/
 
             if(conversation.totalResponses==0){
                 holder.tvCommentQuestionHome.setVisibility(View.GONE);

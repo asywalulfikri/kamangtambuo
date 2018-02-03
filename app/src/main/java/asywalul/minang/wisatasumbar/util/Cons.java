@@ -7,10 +7,11 @@ public class Cons {
     public static final boolean ENABLE_DEBUG = true;
     public static final String TAG = "Wisatasumbar";
     public static final int HTTP_CONNECTION_TIMEOUT = 30000;
-    public static final String CONVERSATION_URL = "http://wisatasumbar.esy.es/restful";
-    public static final String FOTOWISATA = "http://wisatasumbar.esy.es/restful/fotoquestion/";
-    public static final String FOTOUSER = "http://wisatasumbar.esy.es/restful/fotouser/";
-    public static final String URL_DETAIL_USER   = "http://wisatasumbar.esy.es/restful/detailUser.php?userId=";
+   // public static final String CONVERSATION_URL2= "http://dhiva.16mb.com/rest_server/index.php/api/";
+    public static final String CONVERSATION_URL = "http://dhiva.16mb.com/rest_server/index.php/api/";
+    public static final String FOTOWISATA = "http://dhiva.16mb.com/restful/fotoquestion/";
+    public static final String FOTOUSER = "http://dhiva.16mb.com/restful/fotouser/";
+    public static final String URL_DETAIL_USER   = "http://dhiva.16mb.com/restful/detailUser.php?userId=";
     public static final String URL_API_GOOGLE = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=";
     public static final String PACKAGE_PREFIX = "android.minang";
     public static final String USER_LANGUAGE = "user_language";
@@ -18,7 +19,7 @@ public class Cons {
     public static final String LANG_EN = "en";
     public static final String LANG_MN = "zsm";
     public static final int RESULT_CLOSE_ALL = 1001;
-    public static final String ACCOUNTS_URL = "http://wisatasumbar.esy.es/restful";
+    public static final String ACCOUNTS_URL = "http://dhiva.16mb.com/restful";
     public static final String INBOUND_URL = "http://8villages.com/inbound";
     public static final String PRIVATE_PREF = "wisatasumbar_pref";
     public static final String SESSION_PREF = "session_pref";
@@ -28,7 +29,7 @@ public class Cons {
     public static final String DBPATH = "/data/data/sumbarrancak.padang.minang/";
     public static final String APP_DIR = "/.minang";
 
-    public static final int DB_VERSION = 3;
+    public static final int DB_VERSION = 5;
     public static final String DBVERSION_KEY = "dbversion";
 
     public static final String API_KEY = "AIzaSyAwxSpIUZamaTh9iRXlb5-WAodYwLyJJkQ";

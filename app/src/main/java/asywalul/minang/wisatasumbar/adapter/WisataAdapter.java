@@ -137,10 +137,10 @@ public class WisataAdapter extends BaseAdapter {
         }
 
         final Wisata wisata = mDataList.get(position);
-        String time = mPrettyTime.format(DateUtil.stringToDateTime(wisata.dateSubmitted));
+      /*  String time = mPrettyTime.format(DateUtil.stringToDateTime(wisata.dateSubmitted));
         if (time.equals("yang lalu")) {
             time = "beberapa saat yang lalu";
-        }
+        }*/
 
         holder.tvContent.setText(wisata.summary);
         holder.tvLokasi.setText(wisata.daerah);

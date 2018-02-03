@@ -133,7 +133,7 @@ public class CommentListAdapter extends BaseAdapter {
 
 		Comment comment = mDataList.get(position);
 
-		holder.timeTv.setText(TimeUtil.unixToTimeAgo(comment.timeunix));
+		//holder.timeTv.setText(TimeUtil.unixToTimeAgo(comment.timeunix));
 
 		holder.authorTv.setText(comment.user.fullName);
 		holder.commentTv.setAutoLinkText(comment.content);

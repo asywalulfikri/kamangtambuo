@@ -80,10 +80,10 @@ public class CeritaBokmarkActivity extends BaseActivity implements SwipeRefreshL
         Log.d("bahase",languange);
 
 
-        mAdView = (AdView) findViewById(R.id.adView);
+       /* mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

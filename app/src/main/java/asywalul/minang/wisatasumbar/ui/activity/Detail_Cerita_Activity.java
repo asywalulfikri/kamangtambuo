@@ -71,12 +71,12 @@ public class Detail_Cerita_Activity extends BaseActivity {
         mCerita = bundle.getParcelable(Util.getIntentName("cerita"));
         mPosition = bundle.getInt(Util.getIntentName("position"));
 
-        mAdView = (AdView)findViewById(R.id.adView);
+       /* mAdView = (AdView)findViewById(R.id.adView);
         mAdView2 = (AdView)findViewById(R.id.adView2);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
         mAdView.loadAd(adRequest);
-        mAdView2.loadAd(adRequest);
+        mAdView2.loadAd(adRequest);*/
 
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {

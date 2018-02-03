@@ -172,9 +172,10 @@ public class WisataDetail extends BaseActivity {
 
         mCommentAdapter = new CommentListAdapter(this);
 
-        if(mWisataList.latitude.equals("")||mWisataList.longitude.equals("")){
+       /* if(mWisataList.latitude.equals("")||mWisataList.longitude.equals("")){
             fab.setVisibility(View.GONE);
-        }
+        }*/
+       fab.setVisibility(View.GONE);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

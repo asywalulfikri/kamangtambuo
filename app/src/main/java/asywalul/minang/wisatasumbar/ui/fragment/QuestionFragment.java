@@ -167,7 +167,7 @@ public class QuestionFragment extends BaseListFragment implements SwipeRefreshLa
                         && (mQuestionLv.getLastVisiblePosition() - mQuestionLv.getHeaderViewsCount() -
                         mQuestionLv.getFooterViewsCount()) >= (mAdapter.getCount() - 1)) {
 
-                    loadTask3();
+                   // loadTask3();
                 }
             }
 
@@ -403,7 +403,7 @@ public class QuestionFragment extends BaseListFragment implements SwipeRefreshLa
     public void loadMore() {
         super.loadMore();
 
-        loadTask3();
+       // loadTask3();
     }
 
 
@@ -789,7 +789,7 @@ public class QuestionFragment extends BaseListFragment implements SwipeRefreshLa
     public void loadTask2() {
         startCountTime();
         page = 1;
-        String url = Cons.CONVERSATION_URL + "/listQuestion.php?userId=" + iduser + "&page=" + page + "&count=20";
+        String url = "http://dhiva.16mb.com/restful/listQuestion.php?userId="+getUser().userId;
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
@@ -849,7 +849,8 @@ public class QuestionFragment extends BaseListFragment implements SwipeRefreshLa
     public void loadTask3() {
         startCountTime();
         page += 1;
-        String url = Cons.CONVERSATION_URL + "/listQuestion.php?userId=" + iduser + "&page=" + page + "&count=20";
+        String url = Cons.CONVERSATION_URL + "ListQuestion/";
+        // String url = Cons.CONVERSATION_URL + "/listQuestion.php?userId=" + iduser + "&page=" + page + "&count=20";
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -908,7 +909,7 @@ public class QuestionFragment extends BaseListFragment implements SwipeRefreshLa
 
 
     public void LikeQuestionHome (final Conversation conversation,final View v) {
-        String url = Cons.CONVERSATION_URL+"/postVote.php";
+        String url = Cons.CONVERSATION_URL+"PostVote/";
         StringRequest jsonRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
                     @Override

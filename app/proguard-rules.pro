@@ -19,3 +19,4 @@
 -dontwarn com.facebook.**
 -dontwarn com.squareup.picasso.**
 -dontwarn com.parse.**
+-keep class org.ocpsoft.prettytime.i18n.**

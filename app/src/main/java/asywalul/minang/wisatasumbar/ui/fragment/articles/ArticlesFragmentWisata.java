@@ -132,7 +132,7 @@ public class ArticlesFragmentWisata extends BaseListFragment implements SwipeRef
                         && (mQuestionLv.getLastVisiblePosition() - mQuestionLv.getHeaderViewsCount() -
                         mQuestionLv.getFooterViewsCount()) >= (mAdapter.getCount() - 1)) {
 
-                    loadTask3();
+                   // loadTask3();
                 }
             }
 
@@ -335,7 +335,7 @@ public class ArticlesFragmentWisata extends BaseListFragment implements SwipeRef
     public void loadMore() {
         super.loadMore();
 
-        loadTask3();
+      //  loadTask3();
     }
 
 
@@ -392,7 +392,7 @@ public class ArticlesFragmentWisata extends BaseListFragment implements SwipeRef
     public void loadTask2() {
         startCountTime();
         page = 1;
-        url = Cons.CONVERSATION_URL +"/listArticlesKategori.php?category=wisata&&page="+page +"&count=20"+urutan ;
+        url = Cons.CONVERSATION_URL +"ListArticles/";
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

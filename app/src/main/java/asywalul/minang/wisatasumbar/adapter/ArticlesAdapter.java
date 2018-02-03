@@ -149,18 +149,18 @@ public class ArticlesAdapter extends BaseAdapter {
         }
 
         final Articles articles= mDataList.get(position);
-        String time = mPrettyTime.format(DateUtil.stringToDateTime(articles.dateSubmitted));
+       /* String time = mPrettyTime.format(DateUtil.stringToDateTime(articles.dateSubmitted));
         if (time.equals("yang lalu")) {
             time = "beberapa saat yang lalu";
         }
-
+*/
         if(articles.type.equals("1")) {
             holder.cardView2.setVisibility(View.VISIBLE);
             holder.cardView.setVisibility(View.GONE);
 
-            holder.tvTime2.setText(time + " | " + articles.tags);
+           // holder.tvTime2.setText(time + " | " + articles.tags);
             holder.tvTitle2.setText(articles.title);
-            holder.tvContent2.setText(articles.summary);
+            holder.tvContent2.setText(articles.content);
 
             if (articles.image_satu == null || articles.image_satu.equals("")) {
                 holder.ivFoto1.setVisibility(View.GONE);
@@ -204,7 +204,7 @@ public class ArticlesAdapter extends BaseAdapter {
             holder.cardView.setVisibility(View.VISIBLE);
             holder.tvContent.setText(articles.summary);
             holder.tvTitle.setText(articles.title);
-            holder.tvTime.setText(time + " | " + articles.tags);
+          //  holder.tvTime.setText(time + " | " + articles.tags);
 
 
             if (articles.image_satu == null || articles.image_satu.equals("")) {

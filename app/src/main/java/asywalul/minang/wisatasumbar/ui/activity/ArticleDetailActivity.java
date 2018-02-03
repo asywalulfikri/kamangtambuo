@@ -81,10 +81,10 @@ public class ArticleDetailActivity extends BaseActivity  {
 
         String htmlText = "<html><body style=\"text-align:justify\"> %s </body></Html>";
 
-        mAdView = (AdView)findViewById(R.id.adView);
+       /* mAdView = (AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
 
         Bundle bundle = getIntent().getExtras();
         mArticles = bundle.getParcelable(Util.getIntentName("articles"));

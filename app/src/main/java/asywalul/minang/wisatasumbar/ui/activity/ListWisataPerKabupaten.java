@@ -124,10 +124,10 @@ public class ListWisataPerKabupaten extends BaseListActivity implements SwipeRef
 
 
 
-        mAdView = (AdView) findViewById(R.id.adView);
+      /*  mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
         toolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -199,7 +199,7 @@ public class ListWisataPerKabupaten extends BaseListActivity implements SwipeRef
                         && (mQuestionLv.getLastVisiblePosition() - mQuestionLv.getHeaderViewsCount() -
                         mQuestionLv.getFooterViewsCount()) >= (mAdapter.getCount() - 1)) {
 
-                    loadTask3();
+                    //loadTask3();
                 }
             }
 
@@ -572,7 +572,7 @@ public class ListWisataPerKabupaten extends BaseListActivity implements SwipeRef
     public void loadTask2() {
         startCountTime();
         page = 1;
-        String url = Cons.CONVERSATION_URL + "/listWisata.php?&category=1&&location="+kabupaten+"&&page=" + page + "&count=20";
+        String url = Cons.CONVERSATION_URL + "WisataAlam?id_kategori=1&idk="+kabupaten;
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -635,7 +635,8 @@ public class ListWisataPerKabupaten extends BaseListActivity implements SwipeRef
     public void loadTask3() {
         startCountTime();
         page += 1;
-        String url = Cons.CONVERSATION_URL + "/listWisata.php?&category=1&&location="+kabupaten+"&&page=" + page + "&count=20";
+       // String url = Cons.CONVERSATION_URL + "/listWisata.php?&category=1&&location="+kabupaten+"&&page=" + page + "&count=20";
+        String url = Cons.CONVERSATION_URL + "WisataAlam?id_kategori=1&idk="+kabupaten;
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

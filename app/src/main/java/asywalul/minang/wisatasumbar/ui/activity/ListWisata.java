@@ -125,10 +125,10 @@ public class ListWisata extends BaseListActivity implements SwipeRefreshLayout.O
         Log.d("category",category);
 
 
-        mAdView = (AdView) findViewById(R.id.adView);
+       /* mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -195,7 +195,7 @@ public class ListWisata extends BaseListActivity implements SwipeRefreshLayout.O
                         && (mQuestionLv.getLastVisiblePosition() - mQuestionLv.getHeaderViewsCount() -
                         mQuestionLv.getFooterViewsCount()) >= (mAdapter.getCount() - 1)) {
 
-                    loadTask3();
+                   // loadTask3();
                 }
             }
 
@@ -573,7 +573,7 @@ public class ListWisata extends BaseListActivity implements SwipeRefreshLayout.O
     public void loadTask2() {
         startCountTime();
         page = 1;
-        String url = Cons.CONVERSATION_URL + "/listWisata.php?&category="+category+"&&page=" + page + "&count=20&location=";
+        String url = Cons.CONVERSATION_URL + "ListWisata?id_kategori="+category;
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -636,7 +636,8 @@ public class ListWisata extends BaseListActivity implements SwipeRefreshLayout.O
     public void loadTask3() {
         startCountTime();
         page += 1;
-        String url = Cons.CONVERSATION_URL + "/listWisata.php?&category="+category+"&&page=" + page + "&count=20";
+        //String url = Cons.CONVERSATION_URL + "/listWisata.php?&category="+category+"&&page=" + page + "&count=20";
+        String url = Cons.CONVERSATION_URL + "ListWisata?id_kategori="+kategori;
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {

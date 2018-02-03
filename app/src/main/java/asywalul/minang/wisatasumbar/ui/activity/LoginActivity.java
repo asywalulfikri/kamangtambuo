@@ -258,10 +258,8 @@ public class LoginActivity extends BaseActivity {
 		progressDlg.setCancelable(false);
 		progressDlg.show();
 
-		String url = "http://wisatasumbar.esy.es/restful/login.php?" + "email="
-				+ email + "&password="
-				+ password;
-
+		String url = Cons.CONVERSATION_URL +"Login?" + "email=" + email + "&password=" + password;
+		Log.d("urlnya",url);
 		StringRequest strReq = new StringRequest(Request.Method.GET,
 				url,
 				new Response.Listener<String>() {

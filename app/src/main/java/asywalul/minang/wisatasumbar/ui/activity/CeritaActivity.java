@@ -110,11 +110,11 @@ public class CeritaActivity extends BaseListActivity implements SwipeRefreshLayo
         //<<<-------------------> INISIAL USERID <----------------------->>>>>>
         intent = getIntent();
 
-
+/*
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
         mLoadingLayout = (LoadingLayout) findViewById(R.id.layout_loading);
         swipContainer = (SwipeRefreshLayout) findViewById(R.id.ptr_layout);
         swipContainer.setColorSchemeColors(Color.RED, Color.GREEN, Color.BLUE, Color.CYAN);

@@ -41,53 +41,52 @@ public class VolleyParsing {
 
     public static ConversationWrapper conversationParsing(String response) throws Exception {
         ConversationWrapper wrapper = null;
-        JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
+        JSONArray jsonArray = (JSONArray) new JSONTokener(response).nextValue();
 
         try {
-            if (!jsonObject.isNull("data")) {
-                JSONArray dataJson = jsonObject.getJSONArray("data");
-                int size = dataJson.length();
 
-                if (size > 0) {
-                    wrapper = new ConversationWrapper();
 
-                    wrapper.list = new ArrayList<Conversation>();
+            int size = jsonArray.length();
 
-                    for (int i = 0; i < size; i++) {
-                        JSONObject itemJson = dataJson.getJSONObject(i);
+            if (size > 0) {
+                wrapper = new ConversationWrapper();
 
-                        Conversation conversation = new Conversation();
-                        conversation.conversationId = (!itemJson.isNull(Cons.CONV_ID)) ? itemJson.getString(Cons.CONV_ID) : "";
-                        conversation.content = (!itemJson.isNull(Cons.CONV_CONTENT)) ? itemJson.getString(Cons.CONV_CONTENT) : "";
-                        conversation.tags = (!itemJson.isNull(Cons.CONV_TAGS)) ? itemJson.getString(Cons.CONV_TAGS) : "";
-                        conversation.dateSubmitted = (!itemJson.isNull(Cons.CONV_DATE_SUBMITTED)) ? itemJson.getString(Cons.CONV_DATE_SUBMITTED) : "";
-                        conversation.attachment = (!itemJson.isNull(Cons.CONV_ATTACHMENT)) ? itemJson.getString(Cons.CONV_ATTACHMENT) : "";
-                        conversation.type = (!itemJson.isNull(Cons.CONV_TYPE)) ? itemJson.getString(Cons.CONV_TYPE) : "";
-                        conversation.title = (!itemJson.isNull(Cons.CONV_TITLE)) ? itemJson.getString(Cons.CONV_TITLE) : "";
-                        conversation.summary = (!itemJson.isNull(Cons.CONV_SUMMARY)) ? itemJson.getString(Cons.CONV_SUMMARY) : "";
-                        conversation.latitude = (!itemJson.isNull(Cons.CONV_LATITUDE)) ? itemJson.getString(Cons.CONV_LATITUDE) : "";
-                        conversation.longitude = (!itemJson.isNull(Cons.CONV_LONGITUDE)) ? itemJson.getString(Cons.CONV_LONGITUDE) : "";
-                        conversation.isVoted = (itemJson.isNull(Cons.CONV_ISVOTED)) ? 0 : itemJson.getInt(Cons.CONV_ISVOTED);
-                        conversation.totalResponses = (itemJson.isNull(Cons.CONV_TOTAL_RESPONSES)) ? 0 : itemJson.getInt(Cons.CONV_TOTAL_RESPONSES);
-                        conversation.totalVotes = (itemJson.isNull(Cons.CONV_TOTAL_VOTE)) ? 0 : itemJson.getInt(Cons.CONV_TOTAL_VOTE);
-                        conversation.time = (!itemJson.isNull(Cons.CONV_TIME)) ?  itemJson.getString(Cons.CONV_TIME) :"";
-                        conversation.page = jsonObject.getInt("page");
+                wrapper.list = new ArrayList<Conversation>();
 
-                        conversation.user = new User();
+                for (int i = 0; i < size; i++) {
+                    JSONObject itemJson = jsonArray.getJSONObject(i);
 
-                        conversation.user.userId = (!itemJson.isNull(Cons.KEY_ID)) ? itemJson.getString(Cons.KEY_ID) : "";
-                        conversation.user.fullName = (!itemJson.isNull(Cons.KEY_NAME)) ? itemJson.getString(Cons.KEY_NAME) : "";
-                        conversation.user.avatar = (!itemJson.isNull(Cons.KEY_AVATAR)) ? itemJson.getString(Cons.KEY_AVATAR) : "";
-                        conversation.user.gender = (!itemJson.isNull(Cons.KEY_GENDER)) ? itemJson.getString(Cons.KEY_GENDER) : "";
-                        conversation.user.status = (!itemJson.isNull(Cons.KEY_STATUS)) ? itemJson.getString(Cons.KEY_STATUS) : "";
-                        conversation.user.msisdn = (!itemJson.isNull(Cons.KEY_MSISDN)) ? itemJson.getString(Cons.KEY_MSISDN) : "";
-                        conversation.user.email  = (!itemJson.isNull(Cons.KEY_EMAIL)) ? itemJson.getString(Cons.KEY_EMAIL) : "";
-                        conversation.user.birthDate = (!itemJson.isNull(Cons.KEY_BIRTH)) ? itemJson.getString(Cons.KEY_BIRTH) : "";
+                    Conversation conversation = new Conversation();
+                    conversation.conversationId = (!itemJson.isNull(Cons.CONV_ID)) ? itemJson.getString(Cons.CONV_ID) : "";
+                    conversation.content = (!itemJson.isNull(Cons.CONV_CONTENT)) ? itemJson.getString(Cons.CONV_CONTENT) : "";
+                    conversation.tags = (!itemJson.isNull(Cons.CONV_TAGS)) ? itemJson.getString(Cons.CONV_TAGS) : "";
+                    conversation.dateSubmitted = (!itemJson.isNull(Cons.CONV_DATE_SUBMITTED)) ? itemJson.getString(Cons.CONV_DATE_SUBMITTED) : "";
+                    conversation.attachment = (!itemJson.isNull(Cons.CONV_ATTACHMENT)) ? itemJson.getString(Cons.CONV_ATTACHMENT) : "";
+                    conversation.type = (!itemJson.isNull(Cons.CONV_TYPE)) ? itemJson.getString(Cons.CONV_TYPE) : "";
+                    conversation.title = (!itemJson.isNull(Cons.CONV_TITLE)) ? itemJson.getString(Cons.CONV_TITLE) : "";
+                    conversation.summary = (!itemJson.isNull(Cons.CONV_SUMMARY)) ? itemJson.getString(Cons.CONV_SUMMARY) : "";
+                    conversation.latitude = (!itemJson.isNull(Cons.CONV_LATITUDE)) ? itemJson.getString(Cons.CONV_LATITUDE) : "";
+                    conversation.longitude = (!itemJson.isNull(Cons.CONV_LONGITUDE)) ? itemJson.getString(Cons.CONV_LONGITUDE) : "";
+                    conversation.isVoted = (itemJson.isNull(Cons.CONV_ISVOTED)) ? 0 : itemJson.getInt(Cons.CONV_ISVOTED);
+                    conversation.totalResponses = (itemJson.isNull(Cons.CONV_TOTAL_RESPONSES)) ? 0 : itemJson.getInt(Cons.CONV_TOTAL_RESPONSES);
+                    conversation.totalVotes = (itemJson.isNull(Cons.CONV_TOTAL_VOTE)) ? 0 : itemJson.getInt(Cons.CONV_TOTAL_VOTE);
+                    conversation.time = (!itemJson.isNull(Cons.CONV_TIME)) ?  itemJson.getString(Cons.CONV_TIME) :"";
+                    //conversation.page = jsonObject.getInt("page");
 
-                        wrapper.list.add(conversation);
-                    }
+                    conversation.user = new User();
 
+                    conversation.user.userId = (!itemJson.isNull(Cons.KEY_ID)) ? itemJson.getString(Cons.KEY_ID) : "";
+                    conversation.user.fullName = (!itemJson.isNull(Cons.KEY_NAME)) ? itemJson.getString(Cons.KEY_NAME) : "";
+                    conversation.user.avatar = (!itemJson.isNull(Cons.KEY_AVATAR)) ? itemJson.getString(Cons.KEY_AVATAR) : "";
+                    conversation.user.gender = (!itemJson.isNull(Cons.KEY_GENDER)) ? itemJson.getString(Cons.KEY_GENDER) : "";
+                    conversation.user.status = (!itemJson.isNull(Cons.KEY_STATUS)) ? itemJson.getString(Cons.KEY_STATUS) : "";
+                    conversation.user.msisdn = (!itemJson.isNull(Cons.KEY_MSISDN)) ? itemJson.getString(Cons.KEY_MSISDN) : "";
+                    conversation.user.email  = (!itemJson.isNull(Cons.KEY_EMAIL)) ? itemJson.getString(Cons.KEY_EMAIL) : "";
+                    conversation.user.birthDate = (!itemJson.isNull(Cons.KEY_BIRTH)) ? itemJson.getString(Cons.KEY_BIRTH) : "";
+
+                    wrapper.list.add(conversation);
                 }
+
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -98,52 +97,49 @@ public class VolleyParsing {
         return wrapper;
     }
 
+
     public ArticlesWrapper articlesParsing(String response) throws Exception {
-
         ArticlesWrapper wrapper = null;
-        JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
-
+        JSONArray jsonArray = (JSONArray) new JSONTokener(response).nextValue();
         try {
-            if (!jsonObject.isNull("data")) {
 
-                JSONArray dataJson = jsonObject.getJSONArray("data");
-                int size = dataJson.length();
 
-                if (size > 0) {
-                    wrapper = new ArticlesWrapper();
+            int size = jsonArray.length();
 
-                    wrapper.list = new ArrayList<Articles>();
+            if (size > 0) {
+                wrapper = new ArticlesWrapper();
 
-                    for (int i = 0; i < size; i++) {
-                        JSONObject itemJson = dataJson.getJSONObject(i);
+                wrapper.list = new ArrayList<Articles>();
 
-                        Articles articles = new Articles();
+                for (int i = 0; i < size; i++) {
+                    JSONObject itemJson = jsonArray.getJSONObject(i);
 
-                        articles.articlesId = (!itemJson.isNull(Cons.ARTICLES_ID)) ? itemJson.getString(Cons.ARTICLES_ID) : "";
-                        articles.content = (!itemJson.isNull(Cons.ARTICLES_CONTENT)) ? itemJson.getString(Cons.ARTICLES_CONTENT) : "";
-                        articles.tags = (!itemJson.isNull(Cons.ARTICLES_TAGS)) ? itemJson.getString(Cons.ARTICLES_TAGS) : "";
-                        articles.dateSubmitted = (!itemJson.isNull(Cons.ARTICLES_DATE_SUBMITTED)) ? itemJson.getString(Cons.ARTICLES_DATE_SUBMITTED) : "";
-                        articles.latitude = (!itemJson.isNull(Cons.ARTICLES_LATITUDE)) ? itemJson.getString(Cons.ARTICLES_LATITUDE) : "";
-                        articles.longitude = (!itemJson.isNull(Cons.ARTICLES_LONGITUDE)) ? itemJson.getString(Cons.ARTICLES_LONGITUDE) : "";
-                        articles.image_satu = (!itemJson.isNull(Cons.ARTICLES_IMAGE_1)) ? itemJson.getString(Cons.ARTICLES_IMAGE_1) : "";
-                        articles.image_dua = (!itemJson.isNull(Cons.ARTICLES_IMAGE_2)) ? itemJson.getString(Cons.ARTICLES_IMAGE_2) : "";
-                        articles.image_tiga = (!itemJson.isNull(Cons.ARTICLES_IMAGE_3)) ? itemJson.getString(Cons.ARTICLES_IMAGE_3) : "";
-                        articles.title = (!itemJson.isNull(Cons.ARTICLES_TITLE)) ? itemJson.getString(Cons.ARTICLES_TITLE) : "";
-                        articles.type = (!itemJson.isNull(Cons.ARTICLES_TYPE)) ? itemJson.getString(Cons.ARTICLES_TYPE) : "";
-                        articles.category = (!itemJson.isNull(Cons.ARTICLES_CATEGORY)) ? itemJson.getString(Cons.ARTICLES_CATEGORY) : "";
-                        articles.sumber_url = (!itemJson.isNull(Cons.ARTICLES_URL)) ? itemJson.getString(Cons.ARTICLES_URL) : "";
-                        articles.summary = (!itemJson.isNull(Cons.ARTICLES_SUMMARY)) ? itemJson.getString(Cons.ARTICLES_SUMMARY) : "";
+                    Articles articles = new Articles();
 
-                        wrapper.list.add(articles);
-                    }
+                    articles.articlesId = (!itemJson.isNull(Cons.ARTICLES_ID)) ? itemJson.getString(Cons.ARTICLES_ID) : "";
+                    articles.content = (!itemJson.isNull(Cons.ARTICLES_CONTENT)) ? itemJson.getString(Cons.ARTICLES_CONTENT) : "";
+                    articles.tags = (!itemJson.isNull(Cons.ARTICLES_TAGS)) ? itemJson.getString(Cons.ARTICLES_TAGS) : "";
+                    articles.dateSubmitted = (!itemJson.isNull(Cons.ARTICLES_DATE_SUBMITTED)) ? itemJson.getString(Cons.ARTICLES_DATE_SUBMITTED) : "";
+                    articles.latitude = (!itemJson.isNull(Cons.ARTICLES_LATITUDE)) ? itemJson.getString(Cons.ARTICLES_LATITUDE) : "";
+                    articles.longitude = (!itemJson.isNull(Cons.ARTICLES_LONGITUDE)) ? itemJson.getString(Cons.ARTICLES_LONGITUDE) : "";
+                    articles.image_satu = (!itemJson.isNull(Cons.ARTICLES_IMAGE_1)) ? itemJson.getString(Cons.ARTICLES_IMAGE_1) : "";
+                    articles.image_dua = (!itemJson.isNull(Cons.ARTICLES_IMAGE_2)) ? itemJson.getString(Cons.ARTICLES_IMAGE_2) : "";
+                    articles.image_tiga = (!itemJson.isNull(Cons.ARTICLES_IMAGE_3)) ? itemJson.getString(Cons.ARTICLES_IMAGE_3) : "";
+                    articles.title = (!itemJson.isNull(Cons.ARTICLES_TITLE)) ? itemJson.getString(Cons.ARTICLES_TITLE) : "";
+                    articles.type = (!itemJson.isNull(Cons.ARTICLES_TYPE)) ? itemJson.getString(Cons.ARTICLES_TYPE) : "";
+                    articles.category = (!itemJson.isNull(Cons.ARTICLES_CATEGORY)) ? itemJson.getString(Cons.ARTICLES_CATEGORY) : "";
+                    articles.sumber_url = (!itemJson.isNull(Cons.ARTICLES_URL)) ? itemJson.getString(Cons.ARTICLES_URL) : "";
+                    // articles.summary = (!itemJson.isNull(Cons.ARTICLES_SUMMARY)) ? itemJson.getString(Cons.ARTICLES_SUMMARY) : "";
+
+                    wrapper.list.add(articles);
                 }
-            }
 
-            }catch(Exception e){
-                e.printStackTrace();
-
-                throw e;
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            throw e;
+        }
 
         return wrapper;
     }
@@ -151,12 +147,12 @@ public class VolleyParsing {
     public WisataWrapper wisataParsing(String response) throws Exception {
 
         WisataWrapper wrapper = null;
-        JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
+        JSONArray dataJson = (JSONArray) new JSONTokener(response).nextValue();
 
         try {
-            if (!jsonObject.isNull("data")) {
+           // if (!dataJson.isNull("data")) {
 
-                JSONArray dataJson = jsonObject.getJSONArray("data");
+               // JSONArray dataJson = jsonObject.getJSONArray("data");
                 int size = dataJson.length();
 
                 if (size > 0) {
@@ -169,24 +165,24 @@ public class VolleyParsing {
 
                         Wisata wisata = new Wisata();
 
-                        wisata.wisataId = (!itemJson.isNull(Cons.WISATA_ID)) ? itemJson.getString(Cons.WISATA_ID) : "";
+                        wisata.wisataId = (!itemJson.isNull("id_wisata")) ? itemJson.getString("id_wisata") : "";
                         wisata.content  = (!itemJson.isNull(Cons.WISATA_CONTENT)) ? itemJson.getString(Cons.WISATA_CONTENT) : "";
                         wisata.title    = (!itemJson.isNull(Cons.WISATA_TITLE)) ? itemJson.getString(Cons.WISATA_TITLE) : "";
                         wisata.tags     = (!itemJson.isNull(Cons.WISATA_TAGS)) ? itemJson.getString(Cons.WISATA_TAGS) : "";
-                        wisata.dateSubmitted = (!itemJson.isNull(Cons.WISATA_DATE_SUBMITTED)) ? itemJson.getString(Cons.WISATA_DATE_SUBMITTED) : "";
-                        wisata.latitude   = (!itemJson.isNull(Cons.WISATA_LATITUDE)) ? itemJson.getString(Cons.WISATA_LATITUDE) : "";
-                        wisata.longitude  = (!itemJson.isNull(Cons.WISATA_LONGITUDE)) ? itemJson.getString(Cons.WISATA_LONGITUDE) : "";
+                       // wisata.dateSubmitted = (!itemJson.isNull(Cons.WISATA_DATE_SUBMITTED)) ? itemJson.getString(Cons.WISATA_DATE_SUBMITTED) : "";
+                      //  wisata.latitude   = (!itemJson.isNull(Cons.WISATA_LATITUDE)) ? itemJson.getString(Cons.WISATA_LATITUDE) : "";
+                      //  wisata.longitude  = (!itemJson.isNull(Cons.WISATA_LONGITUDE)) ? itemJson.getString(Cons.WISATA_LONGITUDE) : "";
                         wisata.attachment = (!itemJson.isNull(Cons.WISATA_ATTACHMENT)) ? itemJson.getString(Cons.WISATA_ATTACHMENT) : "";
-                        wisata.location = (!itemJson.isNull(Cons.WISATA_LOCATION)) ? itemJson.getString(Cons.WISATA_LOCATION) : "";
-                        wisata.category = (!itemJson.isNull(Cons.WISATA_CATEGORY)) ? itemJson.getString(Cons.WISATA_CATEGORY) : "";
-                        wisata.sumber_url = (!itemJson.isNull(Cons.WISATA_SUMBER_URL)) ? itemJson.getString(Cons.WISATA_SUMBER_URL) : "";
-                        wisata.daerah     = (!itemJson.isNull(Cons.WISATA_DAERAH)) ? itemJson.getString(Cons.WISATA_DAERAH) : "";
-                        wisata.summary    = (!itemJson.isNull(Cons.WISATA_SUMMARY)) ? itemJson.getString(Cons.WISATA_SUMMARY) : "";
+                        wisata.location = (!itemJson.isNull("idk")) ? itemJson.getString("idk") : "";
+                     //   wisata.category = (!itemJson.isNull(Cons.WISATA_CATEGORY)) ? itemJson.getString(Cons.WISATA_CATEGORY) : "";
+                     //   wisata.sumber_url = (!itemJson.isNull(Cons.WISATA_SUMBER_URL)) ? itemJson.getString(Cons.WISATA_SUMBER_URL) : "";
+                    //    wisata.daerah     = (!itemJson.isNull(Cons.WISATA_DAERAH)) ? itemJson.getString(Cons.WISATA_DAERAH) : "";
+                    //    wisata.summary    = (!itemJson.isNull(Cons.WISATA_SUMMARY)) ? itemJson.getString(Cons.WISATA_SUMMARY) : "";
 
                         wrapper.list.add(wisata);
                     }
                 }
-            }
+           // }
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -203,30 +199,38 @@ public class VolleyParsing {
 
         Debug.i(stringJson);
 
-        JSONObject jsonObj = (JSONObject) new JSONTokener(stringJson).nextValue();
+        JSONArray profileJson = (JSONArray) new JSONTokener(stringJson).nextValue();
+
+        try {
+           // if (!jsonObj.isNull("data")) {
+                //JSONArray profileJson = jsonObj.getJSONArray("login");
+                int size = profileJson.length();
+
+                for (int i = 0; i < size; i++) {
+
+                    user = new User();
+                    JSONObject itemJson = profileJson.getJSONObject(i);
+
+                    user.fullName  = (itemJson.isNull(Cons.KEY_NAME))       ? "" : itemJson.getString(Cons.KEY_NAME);
+                    user.userId    = (itemJson.isNull(Cons.KEY_ID))         ? "" : itemJson.getString(Cons.KEY_ID);
+                    user.phone     = (itemJson.isNull(Cons.KEY_MSISDN))     ? "" : itemJson.getString(Cons.KEY_MSISDN);
+                    user.gender    = (itemJson.isNull(Cons.KEY_GENDER))     ? "" : itemJson.getString(Cons.KEY_GENDER);
+                    user.birthDate = (itemJson.isNull(Cons.KEY_BIRTH))      ? "" : itemJson.getString(Cons.KEY_BIRTH);
+                    user.hobby     = (itemJson.isNull(Cons.KEY_HOBBY))      ? "" : itemJson.getString(Cons.KEY_HOBBY);
+                    user.avatar    = (itemJson.isNull(Cons.KEY_AVATAR))     ? "" : itemJson.getString(Cons.KEY_AVATAR);
+                    user.email     = (itemJson.isNull(Cons.KEY_EMAIL))      ? "" : itemJson.getString(Cons.KEY_EMAIL);
+                    user.createAt  = (itemJson.isNull(Cons.KEY_AVATAR))     ? "" : itemJson.getString(Cons.KEY_AVATAR);
+                    user.updatedAt = (itemJson.isNull(Cons.KEY_UPDATED_AT)) ? "" : itemJson.getString(Cons.KEY_UPDATED_AT);
+                    user.status    = (itemJson.isNull(Cons.KEY_STATUS))     ? "" : itemJson.getString(Cons.KEY_STATUS);
+                    user.typeLogin = "manual";
 
 
-        JSONArray profileJson = jsonObj.getJSONArray("login");
-
-        for (int i = 0; i < profileJson.length(); i++) {
-
-            user = new User();
-            JSONObject itemJson = profileJson.getJSONObject(i);
-
-            user.fullName  = (itemJson.isNull(Cons.KEY_NAME))       ? "" : itemJson.getString(Cons.KEY_NAME);
-            user.userId    = (itemJson.isNull(Cons.KEY_ID))         ? "" : itemJson.getString(Cons.KEY_ID);
-            user.phone     = (itemJson.isNull(Cons.KEY_MSISDN))     ? "" : itemJson.getString(Cons.KEY_MSISDN);
-            user.gender    = (itemJson.isNull(Cons.KEY_GENDER))     ? "" : itemJson.getString(Cons.KEY_GENDER);
-            user.birthDate = (itemJson.isNull(Cons.KEY_BIRTH))      ? "" : itemJson.getString(Cons.KEY_BIRTH);
-            user.hobby     = (itemJson.isNull(Cons.KEY_HOBBY))      ? "" : itemJson.getString(Cons.KEY_HOBBY);
-            user.avatar    = (itemJson.isNull(Cons.KEY_AVATAR))     ? "" : itemJson.getString(Cons.KEY_AVATAR);
-            user.email     = (itemJson.isNull(Cons.KEY_EMAIL))      ? "" : itemJson.getString(Cons.KEY_EMAIL);
-            user.createAt  = (itemJson.isNull(Cons.KEY_AVATAR))     ? "" : itemJson.getString(Cons.KEY_AVATAR);
-            user.updatedAt = (itemJson.isNull(Cons.KEY_UPDATED_AT)) ? "" : itemJson.getString(Cons.KEY_UPDATED_AT);
-            user.status    = (itemJson.isNull(Cons.KEY_STATUS))     ? "" : itemJson.getString(Cons.KEY_STATUS);
-            user.typeLogin = "manual";
+                }
+            //}
 
 
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
         return user;
 
@@ -235,38 +239,33 @@ public class VolleyParsing {
     public VideoWrapper videoParsing(String response) throws Exception {
 
         VideoWrapper wrapper = null;
-        JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
+        JSONArray dataJson = (JSONArray) new JSONTokener(response).nextValue();
 
         try {
+        //    JSONArray dataJson = jsonObject.getJSONArray("data");
+            int size = dataJson.length();
 
-            if (!jsonObject.isNull("data")) {
+            if (size > 0) {
+                wrapper = new VideoWrapper();
 
-                JSONArray dataJson = jsonObject.getJSONArray("data");
-                int size = dataJson.length();
+                wrapper.list = new ArrayList<Video>();
 
-                if (size > 0) {
-                    wrapper = new VideoWrapper();
+                for (int i = 0; i < size; i++) {
+                    JSONObject itemJson = dataJson.getJSONObject(i);
 
-                    wrapper.list = new ArrayList<Video>();
+                    Video video = new Video();
 
-                    for (int i = 0; i < size; i++) {
-                        JSONObject itemJson = dataJson.getJSONObject(i);
-
-                        Video video = new Video();
-
-                        video.videoId = (!itemJson.isNull(Cons.VIDEO_ID)) ? itemJson.getString(Cons.VIDEO_ID) : "";
-                        video.url = (!itemJson.isNull(Cons.VIDEO_URL)) ? itemJson.getString(Cons.VIDEO_URL) : "";
-                        video.avatar = (!itemJson.isNull(Cons.VIDEO_AVATAR)) ? itemJson.getString(Cons.VIDEO_AVATAR) : "";
-                        video.title = (!itemJson.isNull(Cons.VIDEO_TITLE)) ? itemJson.getString(Cons.VIDEO_TITLE) : "";
-                        video.channel = (!itemJson.isNull(Cons.VIDEO_CHANNEL)) ? itemJson.getString(Cons.VIDEO_CHANNEL) : "";
-                        video.totalView = (itemJson.isNull(Cons.VIDEO_TOTAL_VIWE)) ? 0 : itemJson.getInt(Cons.VIDEO_TOTAL_VIWE);
-                        video.dateSubmitted = (!itemJson.isNull(Cons.VIDEO_DATESUBMITTED)) ? itemJson.getString(Cons.VIDEO_DATESUBMITTED) : "";
-                        video.category = (!itemJson.isNull(Cons.VIDEO_CATEGORY)) ? itemJson.getString(Cons.VIDEO_CATEGORY) : "";
-                        video.isWatch = (itemJson.isNull(Cons.VIDEO_IS_WATCH)) ? 0 : itemJson.getInt(Cons.VIDEO_IS_WATCH);
-                        wrapper.list.add(video);
-                    }
+                    video.videoId = (!itemJson.isNull(Cons.VIDEO_ID)) ? itemJson.getString(Cons.VIDEO_ID) : "";
+                    video.url = (!itemJson.isNull(Cons.VIDEO_URL)) ? itemJson.getString(Cons.VIDEO_URL) : "";
+                    video.avatar = (!itemJson.isNull(Cons.VIDEO_AVATAR)) ? itemJson.getString(Cons.VIDEO_AVATAR) : "";
+                    video.title = (!itemJson.isNull(Cons.VIDEO_TITLE)) ? itemJson.getString(Cons.VIDEO_TITLE) : "";
+                    video.channel = (!itemJson.isNull(Cons.VIDEO_CHANNEL)) ? itemJson.getString(Cons.VIDEO_CHANNEL) : "";
+                    video.totalView = (itemJson.isNull(Cons.VIDEO_TOTAL_VIWE)) ? 0 : itemJson.getInt(Cons.VIDEO_TOTAL_VIWE);
+                    video.dateSubmitted = (!itemJson.isNull(Cons.VIDEO_DATESUBMITTED)) ? itemJson.getString(Cons.VIDEO_DATESUBMITTED) : "";
+                    video.category = (!itemJson.isNull(Cons.VIDEO_CATEGORY)) ? itemJson.getString(Cons.VIDEO_CATEGORY) : "";
+                    video.isWatch = (itemJson.isNull(Cons.VIDEO_IS_WATCH)) ? 0 : itemJson.getInt(Cons.VIDEO_IS_WATCH);
+                    wrapper.list.add(video);
                 }
-
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -576,10 +575,11 @@ public class VolleyParsing {
 
     public static DaerahWrapper daerahParsing(String response) throws Exception {
         DaerahWrapper wrapper = null;
-        JSONObject jsonObject = (JSONObject) new JSONTokener(response).nextValue();
+        JSONArray dataJson = (JSONArray) new JSONTokener(response).nextValue();
 
         try {
-            JSONArray dataJson = jsonObject.getJSONArray("data");
+          //  JSONArray dataJson = jsonObject.getJSONArray("");
+           // JSONArray dataJson = new JSONArray(jsonObject);
             int size = dataJson.length();
 
             if (size > 0) {

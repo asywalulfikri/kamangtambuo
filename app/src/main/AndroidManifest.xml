@@ -265,6 +265,12 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 
+
+
+        <activity android:name=".ui.activity.SearchWisata"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
         <activity android:name=".image.Hasil"/>
         <activity android:name=".ui.activity.Maps"/>
         <activity android:name=".ui.activity.LocationShown"/>

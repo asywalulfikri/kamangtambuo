@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -28,6 +29,8 @@ import com.android.volley.toolbox.Volley;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import asywalul.minang.wisatasumbar.R;
 import asywalul.minang.wisatasumbar.adapter.DaerahAdapter;
@@ -100,6 +103,7 @@ public class KabubatenKotaListActivity extends BaseActivity implements DaerahAda
         mRecyclerView.setHasFixedSize(true);
         //(mLoadTask = new LoadTask(false)).execute();
         loadTask2();
+        parsingData();
 
     }
 
@@ -327,7 +331,7 @@ public class KabubatenKotaListActivity extends BaseActivity implements DaerahAda
 
     public void loadTask2() {
         startCountTime();
-        String url = Cons.CONVERSATION_URL+ "/listKabupaten.php";
+        String url = Cons.CONVERSATION_URL+ "ListKabupaten/kabupaten";
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -385,5 +389,36 @@ public class KabubatenKotaListActivity extends BaseActivity implements DaerahAda
         RequestQueue queue = Volley.newRequestQueue(getActivity());
         queue.add(mRequest);
     }
+
+    public void parsingData(){
+        String url = "http://183.91.67.198:7079/inquiryData?AgentID=1234567890&AgentPIN=1234567890&AgentTrxID=151028210390&AgentStoreID=idopay1&ProductID=4000&CustomerID=8888801261782314&DateTimeRequest=20150224163407&Signature=3d920c48b329c3b9802ed29fa7407e8941f1fab9";
+        StringRequest mRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        String[] data = response.split("|",11);
+                        List<String> splitList = new ArrayList<String>(Arrays.asList(data));
+
+
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        VolleyLog.d("Response Error", "Error" + error.getMessage());
+
+                    }
+                });
+
+        mRequest.setRetryPolicy(new DefaultRetryPolicy(
+                30000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+        RequestQueue queue = Volley.newRequestQueue(KabubatenKotaListActivity.this);
+        queue.add(mRequest);
+    }
+
 
 }

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.wx.goodview:goodview-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/goodview-1.0.0.aar/27b1b061bca397ef744ba16b5ace5a78/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/goodview-1.0.0.aar/27b1b061bca397ef744ba16b5ace5a78/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wx.goodview/goodview/1.0.0/a7746441a855cd2c68e2cc8eb7f08c973b9a3c28/goodview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

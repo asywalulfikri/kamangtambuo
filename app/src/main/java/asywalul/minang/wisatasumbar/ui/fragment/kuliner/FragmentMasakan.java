@@ -159,7 +159,7 @@ public class FragmentMasakan extends BaseListFragment implements SwipeRefreshLay
             }
 
         });
-        mQuestionLv.setOnScrollListener(new AbsListView.OnScrollListener() {
+      /*  mQuestionLv.setOnScrollListener(new AbsListView.OnScrollListener() {
 
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
@@ -168,7 +168,7 @@ public class FragmentMasakan extends BaseListFragment implements SwipeRefreshLay
                         && (mQuestionLv.getLastVisiblePosition() - mQuestionLv.getHeaderViewsCount() -
                         mQuestionLv.getFooterViewsCount()) >= (mAdapter.getCount() - 1)) {
 
-                    loadTask3();
+                    //loadTask3();
                 }
             }
 
@@ -177,7 +177,7 @@ public class FragmentMasakan extends BaseListFragment implements SwipeRefreshLay
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
 
             }
-        });
+        });*/
 
         return  root;
 
@@ -398,7 +398,8 @@ public class FragmentMasakan extends BaseListFragment implements SwipeRefreshLay
     public void loadTask2() {
         startCountTime();
         page = 1;
-        String url = Cons.CONVERSATION_URL + "/list_kuliner.php?&category="+category+"&&page=" + page + "&count=20";
+        //String url = Cons.CONVERSATION_URL + "/listKuliner.php?&category=="+category+"&&page=" + page + "&count=20";
+        String url = Cons.CONVERSATION_URL + "ListKuliner?category="+category;
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -458,10 +459,11 @@ public class FragmentMasakan extends BaseListFragment implements SwipeRefreshLay
     }
 
 
-    public void loadTask3() {
+  /*  public void loadTask3() {
         startCountTime();
         page += 1;
-        String url = Cons.CONVERSATION_URL + "/list_kuliner.php?"+kategori+"&category="+category+"&&page=" + page + "&count=20";
+       // String url = Cons.CONVERSATION_URL + "/list_kuliner.php?"+kategori+"&category="+category+"&&page=" + page + "&count=20";
+        String url = Cons.CONVERSATION_URL + "ListKuliner?id_kategori="+category;
         Log.d("urlnya", url);
         StringRequest mRequest = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -517,7 +519,7 @@ public class FragmentMasakan extends BaseListFragment implements SwipeRefreshLay
 
         RequestQueue queue = Volley.newRequestQueue(getActivity());
         queue.add(mRequest);
-    }
+    }*/
 
 
 
