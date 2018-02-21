@@ -140,6 +140,7 @@ android:layout_height="match_parent">
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         app:adSize="BANNER"
+        android:visibility="gone"
         app:adUnitId="@string/iklan_main_activity">
     </com.google.android.gms.ads.AdView>
 

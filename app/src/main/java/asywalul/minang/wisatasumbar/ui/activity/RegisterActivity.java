@@ -572,7 +572,8 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
         String waktu = (String.valueOf(TimeUtil.getUnix()));
         path = Cons.FOTOWISATA + image_name;
         if (mFilePath.equals("")) {
-           registerUser2(Id, username,email,gender,birth,password,waktu);
+          // registerUser2(Id, username,email,gender,birth,password,waktu);
+            registerUser(Id, username,email,gender,birth,password,image_name,image_str,waktu);
         } else {
             registerUser(Id, username,email,gender,birth,password,image_name,image_str,waktu);
         }
@@ -588,7 +589,9 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
         progressDialog = new CustomProgressDialog(getActivity(), getString(R.string.text_sending));
         progressDialog.show();
 
-        String url = Cons.CONVERSATION_URL+"/register.php";
+        //String url = Cons.CONVERSATION_URL+"/register.php";
+
+        String url = "http://dhiva.16mb.com/rest_server/index.php/api/Register";
         final String path;
         path = Cons.FOTOUSER + image_name;
 
@@ -602,7 +605,7 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
                     public void onResponse(String response) {
                         User user =null;
                         try {
-                        VolleyParsing parsing = new VolleyParsing();
+                       /* VolleyParsing parsing = new VolleyParsing();
                         user = parsing.userParsing(response);
                             Log.d("responya",String.valueOf(response));
                             saveUser(user);
@@ -610,8 +613,8 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
 
                             Intent intent = new Intent(getActivity(), MainActivityBeranda.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                            startActivity(intent);
-
+                            startActivity(intent);*/
+                            Toast.makeText(RegisterActivity.this,"Daftar Sukses Silakan Login",Toast.LENGTH_SHORT).show();
                         refreshFeed();
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -652,13 +655,13 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
                 obj.put(Cons.CONV_LATITUDE,latitude);
                 obj.put(Cons.CONV_LONGITUDE,longitude);
                 obj.put(Cons.KEY_PASSWORD, password);
-                obj.put(Cons.KEY_HOBBY,"-");
-                obj.put(Cons.KEY_STATUS,"-");
-                obj.put(Cons.KEY_MSISDN,"-");
-                obj.put(Cons.KEY_UPDATED_AT,"-");
-                obj.put(Cons.KEY_AVATAR,path);
-                obj.put(Cons.KEY_FOTO,image_str);
-                obj.put(Cons.IMAGE_NAME,image_name);
+              //  obj.put(Cons.KEY_HOBBY,"-");
+              //  obj.put(Cons.KEY_STATUS,"-");
+             //   obj.put(Cons.KEY_MSISDN,"-");
+              //  obj.put(Cons.KEY_UPDATED_AT,"-");
+             //   obj.put(Cons.KEY_AVATAR,path);
+             //   obj.put(Cons.KEY_FOTO,image_str);
+            //    obj.put(Cons.IMAGE_NAME,image_name);
                 return obj;
 
 
@@ -694,7 +697,7 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
                     public void onResponse(String response) {
                         User user =null;
                         try {
-                            VolleyParsing parsing = new VolleyParsing();
+                           /* VolleyParsing parsing = new VolleyParsing();
                             user = parsing.userParsing(response);
                             Log.d("responya",String.valueOf(response));
                             saveUser(user);
@@ -702,8 +705,8 @@ public class RegisterActivity  extends BaseActivity implements LocationListener 
 
                             Intent intent = new Intent(getActivity(), MainActivityBeranda.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                            startActivity(intent);
-
+                            startActivity(intent);*/
+                            Toast.makeText(RegisterActivity.this,"Daftar Sukses Silakan Login",Toast.LENGTH_SHORT).show();
                             refreshFeed();
                         } catch (Exception e) {
                             e.printStackTrace();

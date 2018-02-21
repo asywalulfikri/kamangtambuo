@@ -14,10 +14,12 @@
             android:icon="@drawable/ic_location_on_black_24dp"
             android:title="@string/nearme" />
         <item android:id="@+id/nav_cerita"
+            android:visible="false"
             android:icon="@drawable/ic_description_black_24dp"
             android:title="@string/text_cerita" />
         <item android:id="@+id/nav_resep"
             android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:visible="false"
             android:title="@string/text_resep" />
         <item android:id="@+id/nav_Toko"
             android:visible="false"
